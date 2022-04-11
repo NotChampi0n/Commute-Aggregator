@@ -13,8 +13,6 @@ body {
     height: 800px;
     background: rgba(255, 255, 255, 1);
     position: relative;
-    top: 0px;
-    left: 0px;
     overflow: hidden;
     /* Code to Center the Body */
     margin-left: auto;
@@ -26,7 +24,6 @@ body {
     height: 751px;
     position: absolute;
     top: 49px;
-    left: 0px;
     overflow: hidden;
 }
 
@@ -66,9 +63,6 @@ body {
 .navbarParent {
     width: 360px;
     height: 50px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     position: relative;
     left: 0px;
     overflow: hidden;
@@ -79,7 +73,6 @@ body {
     height: 50px;
     background: rgba(255, 211, 45, 1);
     position: relative;
-    left: 0px;
     border: 1px solid rgba(0, 0, 0, 1);
     overflow: hidden;
 }
@@ -125,7 +118,7 @@ body {
     text-align: center;
 }
 
-.v26_30 {
+.nameParent {
     width: 285px;
     height: 30px;
     position: absolute;
@@ -134,19 +127,17 @@ body {
     overflow: hidden;
 }
 
-.v26_31 {
+.nameContainer {
     width: 285px;
     height: 30px;
     background: rgba(255, 211, 45, 1);
     position: relative;
-    top: 0px;
-    left: 0px;
     border: 1px solid rgba(0, 0, 0, 1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
 }
 
-.v26_32 {
+.nameLabel {
     width: 39px;
     position: absolute;
     top: 5px;
@@ -155,7 +146,7 @@ body {
     text-align: center;
 }
 
-.v26_33 {
+.nameInput {
     width: 227px;
     height: 19px;
     background: rgba(255, 255, 255, 1);
@@ -165,7 +156,7 @@ body {
     overflow: hidden;
 }
 
-.v26_39 {
+.phNumParent {
     width: 285px;
     height: 30px;
     position: absolute;
@@ -174,19 +165,17 @@ body {
     overflow: hidden;
 }
 
-.v26_40 {
+.phNumContainer {
     width: 285px;
     height: 30px;
     background: rgba(255, 211, 45, 1);
     position: relative;
-    top: 0px;
-    left: 0px;
     border: 1px solid rgba(0, 0, 0, 1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
 }
 
-.v26_41 {
+.phNumLabel {
     width: 101px;
     color: rgba(0, 0, 0, 1);
     position: absolute;
@@ -196,7 +185,7 @@ body {
     text-align: center;
 }
 
-.v26_42 {
+.phNumInput {
     width: 167px;
     height: 19px;
     background: rgba(255, 255, 255, 1);
@@ -206,7 +195,7 @@ body {
     overflow: hidden;
 }
 
-.v26_43 {
+.otpParent {
     width: 285px;
     height: 30px;
     position: absolute;
@@ -215,19 +204,17 @@ body {
     overflow: hidden;
 }
 
-.v26_44 {
+.otpContainer {
     width: 285px;
     height: 30px;
     background: rgba(255, 211, 45, 1);
     position: absolute;
-    top: 0px;
-    left: 0px;
     border: 1px solid rgba(0, 0, 0, 1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
 }
 
-.v26_45 {
+.otpLabel {
     width: 30px;
     color: rgba(0, 0, 0, 1);
     position: absolute;
@@ -237,7 +224,7 @@ body {
     text-align: center;
 }
 
-.v26_46 {
+.otpInput {
     width: 232px;
     height: 19px;
     background: rgba(255, 255, 255, 1);
@@ -247,7 +234,7 @@ body {
     overflow: hidden;
 }
 
-.v26_34 {
+.emailParent {
     width: 285px;
     height: 30px;
     position: absolute;
@@ -256,7 +243,7 @@ body {
     overflow: hidden;
 }
 
-.v26_35 {
+.emailContainer {
     width: 285px;
     height: 30px;
     background: rgba(255, 211, 45, 1);
@@ -268,7 +255,7 @@ body {
     overflow: hidden;
 }
 
-.v26_36 {
+.emailLabel {
     width: 55px;
     color: rgba(0, 0, 0, 1);
     position: absolute;
@@ -278,7 +265,7 @@ body {
     text-align: center;
 }
 
-.v26_37 {
+.emailInput {
     width: 211px;
     height: 19px;
     background: rgba(255, 255, 255, 1);
@@ -288,7 +275,7 @@ body {
     overflow: hidden;
 }
 
-.v26_52 {
+.signupParent {
     width: 74px;
     height: 35px;
     position: absolute;
@@ -297,19 +284,17 @@ body {
     overflow: hidden;
 }
 
-.v26_53 {
+.signupContainer {
     width: 74px;
     height: 35px;
     background: rgba(255, 211, 45, 1);
     position: absolute;
-    top: 0px;
-    left: 0px;
     border: 1px solid rgba(0, 0, 0, 1);
     border-radius: 75px;
     overflow: hidden;
 }
 
-.v26_54 {
+.signupLabel {
     width: 57px;
     color: rgba(0, 0, 0, 1);
     position: absolute;
@@ -319,7 +304,7 @@ body {
     text-align: center;
 }
 
-.v26_94 {
+.sOtpParent {
     width: 136px;
     height: 28px;
     position: absolute;
@@ -328,19 +313,17 @@ body {
     overflow: hidden;
 }
 
-.v26_95 {
+.sOtpContainer {
     width: 136px;
     height: 28px;
     background: rgba(255, 211, 45, 1);
     position: relative;
-    top: 0px;
-    left: 0px;
     border: 1px solid rgba(0, 0, 0, 1);
     border-radius: 75px;
     overflow: hidden;
 }
 
-.v26_96 {
+.sOtpLabel {
     width: 103px;
     color: rgba(0, 0, 0, 1);
     position: absolute;
