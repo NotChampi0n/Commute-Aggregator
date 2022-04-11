@@ -21,7 +21,7 @@ body {
     margin-right: auto;
 }
 
-.v26_27 {
+.bgContainer {
     width: 360px;
     height: 751px;
     position: absolute;
@@ -30,14 +30,14 @@ body {
     overflow: hidden;
 }
 
-.v26_28 {
+.map {
     width: 360px;
     height: 751px;
     background-image: url("/Map.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.9;
     position: relative;
     top: 0px;
     left: 0px;
@@ -63,7 +63,7 @@ body {
     padding-left: 5px;
 }
 
-.v26_18 {
+.navbarParent {
     width: 360px;
     height: 50px;
     background-repeat: no-repeat;
@@ -74,7 +74,7 @@ body {
     overflow: hidden;
 }
 
-.v26_19 {
+.navbarContainer {
     width: 360px;
     height: 50px;
     background: rgba(255, 211, 45, 1);
@@ -84,7 +84,7 @@ body {
     overflow: hidden;
 }
 
-.v26_20 {
+.commuteAggregator {
     width: 82px;
     color: rgba(0, 0, 0, 1);
     position: absolute;
@@ -94,7 +94,7 @@ body {
     text-align: center;
 }
 
-.v26_21 {
+.platforms {
     width: 70px;
     color: rgba(0, 0, 0, 1);
     position: absolute;
@@ -105,9 +105,8 @@ body {
     text-align: center;
 }
 
-.v26_25 {
+.contactUs {
     width: 69px;
-    color: rgba(0, 0, 0, 1);
     position: absolute;
     top: 0px;
     left: 230px;
@@ -116,9 +115,8 @@ body {
     text-align: center;
 }
 
-.v26_26 {
+.login {
     width: 39px;
-    color: rgba(0, 0, 0, 1);
     position: absolute;
     top: 0px;
     padding-top: 16px;
@@ -150,7 +148,6 @@ body {
 
 .v26_32 {
     width: 39px;
-    color: rgba(0, 0, 0, 1);
     position: absolute;
     top: 5px;
     left: 7px;
