@@ -8,123 +8,105 @@ body {
 }
 
 .black_left_border {
-    border-left: black solid 2px;
-    height: 100%;
-    padding-top: 16px;
-    padding-left: 5px;
-  }
+  border-left: black solid 2px;
+  height: 100%;
+  padding-top: 16px;
+  padding-left: 5px;
+}
 
-.v25_2 {
+.parent {
   width: 360px;
   height: 800px;
   background: rgba(255, 255, 255, 1);
-  opacity: 1;
   position: relative;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
 }
-.v36_12 {
+.bgContainer {
   width: 360px;
   height: 751px;
   position: absolute;
   top: 49px;
   overflow: hidden;
 }
-.v25_61 {
+.map {
   width: 360px;
   height: 751px;
   background: url("/Map.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0.9;
   position: relative;
-  top: 0px;
-  left: 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
 
 .maptint {
-    width: 360px;
-    height: 751px;
-    position: absolute;
-    background-color: #072227;
-    opacity: 0.9;
-    top: 0px;
-    left: 0px;
-  }
-
-.v25_60 {
   width: 360px;
   height: 751px;
-  background: rgba(7, 34, 39, 0.9100000262260437);
-  opacity: 1;
-  position: relative;
-  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #072227;
+  opacity: 0.9;
 }
-.v25_73 {
+
+.navbarParent {
   width: 360px;
   height: 50px;
-  opacity: 1;
   position: relative;
   overflow: hidden;
 }
-.v25_44 {
+.navbarContainer {
   width: 360px;
   height: 49px;
   background: rgba(255, 211, 45, 1);
-  opacity: 1;
   position: relative;
-  top: 0px;
-  left: 0px;
   border: 1px solid rgba(0, 0, 0, 1);
   overflow: hidden;
 }
-.v25_45 {
+.comAgg {
   width: 82px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 6px;
   left: 9px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  opacity: 1;
   text-align: center;
 }
-.v25_46 {
-  width: 69px;
+.platforms {
+  width: 70px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 16px;
-  left: 156px;
+  top: 0px;
+  left: 145px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
 
-.v25_50 {
+.contactUs {
   width: 69px;
+  padding-top: 10px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 10px;
-  left: 235px;
-  /* padding-top: 10px; */
+  top: 0px;
+  left: 230px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  opacity: 1;
   text-align: center;
 }
 
-.v25_51 {
+.login {
   width: 39px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 16px;
-  left: 314px;
+  top: 0px;
+  left: 305px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  opacity: 1;
   text-align: center;
 }
-.v25_71 {
+.fromParent {
   width: 285px;
   height: 30px;
   position: absolute;
@@ -132,39 +114,34 @@ body {
   left: 37px;
   overflow: hidden;
 }
-.v25_53 {
+.fromContainer {
   width: 285px;
   height: 30px;
   background: rgba(255, 211, 45, 1);
-  opacity: 1;
   position: relative;
-  top: 0px;
-  left: 0px;
   border: 1px solid rgba(0, 0, 0, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
-.v25_54 {
+.fromLabel {
   width: 35px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 5px;
   left: 6px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  opacity: 1;
   text-align: center;
 }
-.v25_55 {
+.fromInput {
   width: 227px;
   height: 19px;
   background: rgba(255, 255, 255, 1);
-  opacity: 1;
   position: absolute;
   top: 5px;
   left: 51px;
   overflow: hidden;
 }
-.v25_72 {
+.toParent {
   width: 285px;
   height: 30px;
   position: absolute;
@@ -172,11 +149,10 @@ body {
   left: 37px;
   overflow: hidden;
 }
-.v25_56 {
+.toContainer {
   width: 285px;
   height: 30px;
   background: rgba(255, 211, 45, 1);
-  opacity: 1;
   position: relative;
   top: 0px;
   left: 0px;
@@ -184,7 +160,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
-.v25_57 {
+.toInput {
   width: 227px;
   height: 19px;
   background: rgba(255, 255, 255, 1);
@@ -193,7 +169,7 @@ body {
   left: 51px;
   overflow: hidden;
 }
-.v25_58 {
+.toLabel {
   width: 17px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
@@ -202,7 +178,7 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
-.v26_71 {
+.apiParent {
   width: 360px;
   height: 469px;
   position: absolute;
@@ -210,32 +186,38 @@ body {
   left: 0px;
   overflow: hidden;
 }
-.v25_74 {
-  width: 65px;
+
+.uberApiParent {
+  width: 100px;
   height: 469px;
   position: absolute;
   top: 0px;
-  left: 234px;
+  left: 225px;
   overflow: hidden;
 }
-.v25_63 {
-  width: 65px;
+.uberApiContainer {
+  width: 100px;
   height: 469px;
+  left: 0px;
   background: rgba(255, 255, 255, 1);
   position: relative;
   border: 1px solid rgba(0, 0, 0, 1);
   overflow: hidden;
 }
-.v25_85 {
-  width: 100px;
-  height: 32px;
+.uberApiBtn {
+  width: 27px;
+  height: 36px;
+  background: rgba(255, 255, 255, 1);
   position: absolute;
-  top: 306px;
-  left: 14px;
-  transform: rotate(-90deg);
+  top: 150px;
+  left: 10px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
   overflow: hidden;
 }
-.v25_75 {
+
+.revvApiParent {
   width: 88px;
   height: 469px;
   position: absolute;
@@ -243,7 +225,7 @@ body {
   left: 272px;
   overflow: hidden;
 }
-.v25_62 {
+.revvApiContainer {
   width: 61px;
   height: 469px;
   background: rgba(255, 255, 255, 1);
@@ -252,76 +234,14 @@ body {
   border: 1px solid rgba(0, 0, 0, 1);
   overflow: hidden;
 }
-.v25_67 {
-  width: 27px;
-  height: 36px;
-  background: rgba(255, 255, 255, 1);
-  opacity: 1;
-  position: absolute;
-  top: 150px;
-  border: 1px solid rgba(0, 0, 0, 1);
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  overflow: hidden;
-}
-.v25_76 {
-  width: 261px;
-  height: 469px;
-  position: absolute;
-  top: 469px;
-  left: 261px;
-  transform: rotate(-180deg);
-  overflow: hidden;
-}
-.v25_77 {
-  width: 234px;
-  height: 469px;
-  background: rgba(255, 255, 255, 1);
-  position: absolute;
-  left: 27px;
-  border: 1px solid rgba(0, 0, 0, 1);
-  transform: rotate(-180deg);
-  overflow: hidden;
-}
-.v25_78 {
-  width: 27px;
-  height: 36px;
-  background: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 319px;
-  border: 1px solid rgba(0, 0, 0, 1);
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  transform: rotate(-180deg);
-  overflow: hidden;
-}
-.v25_83 {
-  width: 129px;
-  height: 46px;
-  position: absolute;
-  top: 332px;
-  left: 209px;
-  overflow: hidden;
-}
-.v25_65 {
+.revvApiBtn {
   width: 27px;
   height: 36px;
   background: rgba(255, 255, 255, 1);
   position: absolute;
   top: 150px;
-  left: 207px;
   border: 1px solid rgba(0, 0, 0, 1);
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
-  overflow: hidden;
-}
-
-.v25_87 {
-  width: 125px;
-  height: 47px;
-  position: absolute;
-  top: 230px;
-  left: 313px;
-  transform: rotate(-90deg);
   overflow: hidden;
 }
