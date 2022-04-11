@@ -3,18 +3,20 @@
 }
 
 body {
-    font-size: 14px;
+    font-size: 15px;
+    font-family: Righteous;
+    font-weight: Regular;
 }
 
-.v26_38 {
+.parent {
     width: 360px;
     height: 800px;
     background: rgba(255, 255, 255, 1);
-    opacity: 1;
     position: relative;
     top: 0px;
     left: 0px;
     overflow: hidden;
+    /* Code to Center the Body */
     margin-left: auto;
     margin-right: auto;
 }
@@ -22,7 +24,6 @@ body {
 .v26_27 {
     width: 360px;
     height: 751px;
-    opacity: 1;
     position: absolute;
     top: 49px;
     left: 0px;
@@ -59,7 +60,6 @@ body {
 .black_left_border {
     border-left: black solid 2px;
     height: 100%;
-    /* padding-top: 16px; */
     padding-left: 5px;
 }
 
@@ -69,7 +69,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    opacity: 1;
     position: relative;
     left: 0px;
     overflow: hidden;
@@ -79,7 +78,6 @@ body {
     width: 360px;
     height: 50px;
     background: rgba(255, 211, 45, 1);
-    opacity: 1;
     position: relative;
     left: 0px;
     border: 1px solid rgba(0, 0, 0, 1);
@@ -93,10 +91,6 @@ body {
     top: 6px;
     left: 9px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Righteous;
-    font-weight: Regular;
-    font-size: 15px;
-    opacity: 1;
     text-align: center;
 }
 
@@ -108,10 +102,6 @@ body {
     left: 145px;
     padding-top: 16px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Righteous;
-    font-weight: Regular;
-    font-size: 15px;
-    opacity: 1;
     text-align: center;
 }
 
@@ -123,10 +113,6 @@ body {
     left: 230px;
     padding-top: 10px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Righteous;
-    font-weight: Regular;
-    font-size: 13px;
-    opacity: 1;
     text-align: center;
 }
 
@@ -138,20 +124,12 @@ body {
     padding-top: 16px;
     left: 305px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Righteous;
-    font-weight: Regular;
-    font-size: 15px;
-    opacity: 1;
     text-align: center;
 }
 
 .v26_30 {
     width: 285px;
     height: 30px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
     position: absolute;
     top: 93px;
     left: 37px;
@@ -162,7 +140,6 @@ body {
     width: 285px;
     height: 30px;
     background: rgba(255, 211, 45, 1);
-    opacity: 1;
     position: relative;
     top: 0px;
     left: 0px;
@@ -178,10 +155,6 @@ body {
     top: 5px;
     left: 7px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Righteous;
-    font-weight: Regular;
-    font-size: 15px;
-    opacity: 1;
     text-align: center;
 }
 
@@ -189,7 +162,6 @@ body {
     width: 227px;
     height: 19px;
     background: rgba(255, 255, 255, 1);
-    opacity: 1;
     position: absolute;
     top: 5px;
     left: 51px;
@@ -199,10 +171,6 @@ body {
 .v26_39 {
     width: 285px;
     height: 30px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
     position: absolute;
     top: 185px;
     left: 37px;
@@ -213,7 +181,6 @@ body {
     width: 285px;
     height: 30px;
     background: rgba(255, 211, 45, 1);
-    opacity: 1;
     position: relative;
     top: 0px;
     left: 0px;
@@ -229,10 +196,6 @@ body {
     top: 5px;
     left: 7px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Righteous;
-    font-weight: Regular;
-    font-size: 15px;
-    opacity: 1;
     text-align: center;
 }
 
@@ -240,7 +203,6 @@ body {
     width: 167px;
     height: 19px;
     background: rgba(255, 255, 255, 1);
-    opacity: 1;
     position: absolute;
     top: 5px;
     left: 111px;
@@ -250,10 +212,6 @@ body {
 .v26_43 {
     width: 285px;
     height: 30px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
     position: absolute;
     top: 455px;
     left: 37px;
@@ -264,7 +222,6 @@ body {
     width: 285px;
     height: 30px;
     background: rgba(255, 211, 45, 1);
-    opacity: 1;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -280,10 +237,6 @@ body {
     top: 5px;
     left: 7px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Righteous;
-    font-weight: Regular;
-    font-size: 15px;
-    opacity: 1;
     text-align: center;
 }
 
@@ -291,7 +244,6 @@ body {
     width: 232px;
     height: 19px;
     background: rgba(255, 255, 255, 1);
-    opacity: 1;
     position: absolute;
     top: 5px;
     left: 46px;
@@ -301,10 +253,6 @@ body {
 .v26_34 {
     width: 285px;
     height: 30px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
     position: absolute;
     top: 139px;
     left: 37px;
@@ -315,7 +263,6 @@ body {
     width: 285px;
     height: 30px;
     background: rgba(255, 211, 45, 1);
-    opacity: 1;
     position: relative;
     top: 0px;
     left: 0px;
@@ -331,10 +278,6 @@ body {
     top: 6px;
     left: 7px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Righteous;
-    font-weight: Regular;
-    font-size: 15px;
-    opacity: 1;
     text-align: center;
 }
 
@@ -342,7 +285,6 @@ body {
     width: 211px;
     height: 19px;
     background: rgba(255, 255, 255, 1);
-    opacity: 1;
     position: absolute;
     top: 5px;
     left: 67px;
@@ -352,7 +294,6 @@ body {
 .v26_52 {
     width: 74px;
     height: 35px;
-    opacity: 1;
     position: absolute;
     top: 526px;
     left: 143px;
@@ -363,7 +304,6 @@ body {
     width: 74px;
     height: 35px;
     background: rgba(255, 211, 45, 1);
-    opacity: 1;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -379,20 +319,12 @@ body {
     top: 8px;
     left: 8px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Righteous;
-    font-weight: Regular;
-    font-size: 15px;
-    opacity: 1;
     text-align: center;
 }
 
 .v26_94 {
     width: 136px;
     height: 28px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
     position: absolute;
     top: 262px;
     left: 112px;
@@ -403,7 +335,6 @@ body {
     width: 136px;
     height: 28px;
     background: rgba(255, 211, 45, 1);
-    opacity: 1;
     position: relative;
     top: 0px;
     left: 0px;
@@ -419,9 +350,5 @@ body {
     top: 4px;
     left: 17px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Righteous;
-    font-weight: Regular;
-    font-size: 15px;
-    opacity: 1;
     text-align: center;
 }
