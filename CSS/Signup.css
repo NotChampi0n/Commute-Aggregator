@@ -5,7 +5,7 @@
   width: 285px;
   height: 30px;
   position: absolute;
-  top: 76px;
+  top: 93px;
   left: 37px;
   overflow: hidden;
 }
@@ -35,45 +35,11 @@
   left: 51px;
   overflow: hidden;
 }
-
-.categoryParent {
-  width: 285px;
-  height: 30px;
-  position: absolute;
-  top: 166px;
-  left: 37px;
-  overflow: hidden;
-}
-.categoryContainer {
-  width: 285px;
-  height: 30px;
-  background: rgba(255, 211, 45, 1);
-  position: relative;
-  border: 1px solid rgba(0, 0, 0, 1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-}
-.categoryLabel {
-  width: 109px;
-  height: 19px;
-  background: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 6px;
-  left: 169px;
-  overflow: hidden;
-}
-.categoryInput {
-  width: 166px;
-  position: absolute;
-  top: 6px;
-  left: 3px;
-  text-align: center;
-}
 .emailParent {
   width: 285px;
   height: 30px;
   position: absolute;
-  top: 122px;
+  top: 139px;
   left: 37px;
   overflow: hidden;
 }
@@ -82,12 +48,15 @@
   height: 30px;
   background: rgba(255, 211, 45, 1);
   position: relative;
+  top: 0px;
+  left: 0px;
   border: 1px solid rgba(0, 0, 0, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
 .emailLabel {
   width: 55px;
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 6px;
   left: 7px;
@@ -103,112 +72,125 @@
   left: 67px;
   overflow: hidden;
 }
-.ssViewParent {
+.phNumParent {
   width: 285px;
-  height: 314px;
+  height: 30px;
   position: absolute;
-  top: 257px;
+  top: 185px;
   left: 37px;
   overflow: hidden;
 }
-.ssViewContainer {
+.phNumContainer {
   width: 285px;
-  height: 314px;
+  height: 30px;
   background: rgba(255, 211, 45, 1);
   position: relative;
   border: 1px solid rgba(0, 0, 0, 1);
-  overflow: hidden;
-}
-.ssViewInput {
-  width: 271px;
-  height: 298px;
-  background: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 9px;
-  left: 7px;
-  overflow: hidden;
-}
-.submitcParent {
-  width: 170px;
-  height: 35px;
-  position: absolute;
-  top: 683px;
-  left: 95px;
-  overflow: hidden;
-}
-.submitcContainer {
-  width: 170px;
-  height: 35px;
-  background: rgba(255, 211, 45, 1);
-  position: absolute;
-  border: 1px solid rgba(0, 0, 0, 1);
-  border-top-left-radius: 75px;
-  border-top-right-radius: 75px;
-  border-bottom-left-radius: 75px;
-  border-bottom-right-radius: 75px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
-.submitcLabel {
-  width: 146px;
+.phNumLabel {
+  width: 101px;
+  color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 8px;
-  left: 12px;
+  top: 5px;
+  left: 7px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
-.attachssParent {
-  width: 197px;
-  height: 35px;
+.phNumInput {
+  width: 167px;
+  height: 19px;
+  background: rgba(255, 255, 255, 1);
   position: absolute;
-  top: 595px;
-  left: 81px;
+  top: 5px;
+  left: 111px;
   overflow: hidden;
 }
-.attachssContainer {
-  width: 197px;
-  height: 35px;
+.sOtpParent {
+  width: 136px;
+  height: 28px;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 262px;
+  left: 112px;
   overflow: hidden;
 }
-.attachssChild {
-  width: 197px;
-  height: 35px;
+.sOtpContainer {
+  width: 136px;
+  height: 28px;
   background: rgba(255, 211, 45, 1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  position: relative;
   border: 1px solid rgba(0, 0, 0, 1);
   border-radius: 75px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
-.attachssLabel {
-  width: 146px;
+.sOtpLabel {
+  width: 103px;
+  color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 8px;
-  left: 12px;
+  top: 4px;
+  left: 17px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
-.imgParent {
-  width: 25px;
-  height: 23px;
+.otpParent {
+  width: 285px;
+  height: 30px;
   position: absolute;
-  top: 6px;
-  left: 158px;
+  top: 455px;
+  left: 37px;
+  overflow: hidden;
+}
+.otpContainer {
+  width: 285px;
+  height: 30px;
+  background: rgba(255, 211, 45, 1);
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
-.imgContainer {
-  width: 25px;
-  height: 23px;
+.otpLabel {
+  width: 30px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.otpInput {
+  width: 232px;
+  height: 19px;
   background: rgba(255, 255, 255, 1);
   position: absolute;
-  top: 0px;
-  left: 0px;
-  border: 1px solid rgba(0, 0, 0, 1);
+  top: 5px;
+  left: 46px;
   overflow: hidden;
+}
+.signupParent {
+  width: 74px;
+  height: 35px;
+  position: absolute;
+  top: 526px;
+  left: 143px;
+  overflow: hidden;
+}
+.signupContainer {
+  width: 74px;
+  height: 35px;
+  background: rgba(255, 211, 45, 1);
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 75px;
+  overflow: hidden;
+}
+.signupLabel {
+  width: 57px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
 }
