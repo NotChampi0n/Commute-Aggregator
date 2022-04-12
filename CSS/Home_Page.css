@@ -1,59 +1,37 @@
 * {
   box-sizing: border-box;
 }
-.From_Container {
+.fromParent {
   width: 285px;
-  height: 106px;
+  height: 30px;
   position: absolute;
   top: 167px;
   left: 37px;
   overflow: hidden;
 }
-.From_DropYellow {
-  width: 240px;
-  height: 82px;
-  background: rgba(255, 211, 45, 1);
-  position: absolute;
-  top: 24px;
-  left: 45px;
-  border: 1px solid rgba(0, 0, 0, 1);
-  overflow: hidden;
-}
-.From_MainRectangle {
+.fromContainer {
   width: 285px;
-  height: 24px;
+  height: 30px;
   background: rgba(255, 211, 45, 1);
   position: relative;
-  top: 0px;
-  left: 0px;
   border: 1px solid rgba(0, 0, 0, 1);
   overflow: hidden;
 }
-.From_Text {
+.fromLabel {
   width: 35px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: 6px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
-.From_TextDropDown {
-  width: 227px;
-  height: 79px;
-  background: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 22px;
-  left: 51px;
-  border: 1px solid rgba(0, 0, 0, 1);
-  overflow: hidden;
-}
-.From_MainTextBox {
+.fromInput {
   width: 227px;
   height: 19px;
   background: rgba(255, 255, 255, 1);
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: 51px;
   overflow: hidden;
 }
@@ -65,15 +43,16 @@
   left: 262px;
   overflow: hidden;
 }
-.Swap_MainBox {
+.swapParent {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 319px;
+  /* Change to move the Swap Box */
+  top: 300px;
   left: 154px;
   overflow: hidden;
 }
-.Swap_Circle {
+.swapContainer {
   width: 50px;
   height: 50px;
   background: rgba(255, 211, 45, 1);
@@ -87,46 +66,32 @@
   width: 30px;
   height: 30px;
 }
-.To_Container {
+.toParent {
   width: 285px;
-  height: 110px;
+  height: 30px;
   position: absolute;
   top: 452px;
   left: 37px;
   overflow: hidden;
 }
-.To_DropYellowBox {
-  width: 240px;
-  height: 87px;
-  background: rgba(255, 211, 45, 1);
-  opacity: 1;
-  position: absolute;
-  top: 23px;
-  left: 45px;
-  border: 1px solid rgba(0, 0, 0, 1);
-  overflow: hidden;
-}
-.To_TextDropDown {
-  width: 227px;
-  height: 79px;
-  background: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 24px;
-  left: 51px;
-  border: 1px solid rgba(0, 0, 0, 1);
-  overflow: hidden;
-}
-.To_MainRectangle {
+.toContainer {
   width: 285px;
-  height: 24px;
+  height: 30px;
   background: rgba(255, 211, 45, 1);
   position: absolute;
-  top: 0px;
-  left: 0px;
   border: 1px solid rgba(0, 0, 0, 1);
   overflow: hidden;
 }
-.To_MainTextBox {
+.toLabel {
+  width: 17px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.toInput {
   width: 227px;
   height: 19px;
   background: rgba(255, 255, 255, 1);
@@ -134,15 +99,6 @@
   top: 5px;
   left: 51px;
   overflow: hidden;
-}
-.To_Text {
-  width: 17px;
-  color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 2px;
-  left: 16px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-align: center;
 }
 .To_GPS {
   width: 15px;
@@ -152,7 +108,7 @@
   left: 262px;
   overflow: hidden;
 }
-.SnC_Box {
+.sncParent {
   width: 170px;
   height: 35px;
   position: absolute;
@@ -160,7 +116,7 @@
   left: 95px;
   overflow: hidden;
 }
-.SnC_Container {
+.sncContainer {
   width: 170px;
   height: 35px;
   background: rgba(255, 211, 45, 1);
@@ -174,7 +130,7 @@
   border-bottom-right-radius: 75px;
   overflow: hidden;
 }
-.SnC_Text_Container {
+.sncLabel {
   width: 146px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
@@ -183,7 +139,7 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
-.Loading_Gif_Container {
+.loadingGifParent {
   width: 256px;
   height: 36px;
   position: absolute;
@@ -191,7 +147,7 @@
   left: 52px;
   overflow: hidden;
 }
-.Loading_Gif {
+.loadingGifContainer {
   width: 256px;
   height: 36px;
   background: rgba(255, 255, 255, 1);
