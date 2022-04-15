@@ -121,6 +121,9 @@
   left: 95px;
   overflow: hidden;
 }
+.sncParent:hover{
+  cursor: pointer;
+}
 .sncContainer {
   width: 170px;
   height: 35px;
