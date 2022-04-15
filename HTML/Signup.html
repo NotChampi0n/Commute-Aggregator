@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" />
+    <link rel="stylesheet" href="/CSS/Signup.css" />
+    <link rel="stylesheet" href="/CSS/CSSCommon.css" />
+    <script src="/JS/signup.js"></script>
+  </head>
+
+  <body>
+
+    <div class="parent">
+
+      <div class="navbarParent">
+        <div class="navbarContainer"></div>
+        <span class="comAgg" onclick="location.href='/HTML/Home_Page.html'">Commute Aggregator</span>
+        <span class="platforms black_left_border">Platforms</span>
+        <span class="contactUs black_left_border" onclick="location.href='/HTML/Complaint_Page.html'">Contact Us</span>
+        <span class="login black_left_border" onclick="location.href='/HTML/Login.html'">Login</span>
+      </div>
+
+      <div class="bgContainer">
+        <div class="map"></div>
+        <div class="maptint"></div>
+      </div>
+
+      <div class="nameParent">
+        <div class="nameContainer"></div>
+        <span class="nameLabel">Name</span>
+        <div class="nameInput">
+          <input type="text" name="name" id="name">
+        </div>
+      </div>
+
+      <div class="emailParent">
+        <div class="emailContainer"></div>
+        <span class="emailLabel">Email ID</span>
+        <div class="emailInput">
+          <input type="email" name="email" id="email">
+        </div>
+      </div>
+
+      <div class="phNumParent">
+        <div class="phNumContainer"></div>
+        <span class="phNumLabel">Phone Number</span>
+        <div class="phNumInput">
+          <input type="text" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" name="phone" id="phone">
+        </div>
+      </div>
+
+      <div class="sOtpParent">
+        <div class="sOtpContainer"></div>
+        <span class="sOtpLabel">Send OTP</span>
+      </div>
+
+      <div class="otpParent">
+        <div class="otpContainer"></div>
+        <span class="otpLabel">OTP</span>
+        <div class="otpInput">
+          <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" name="otp" id="otp">
+        </div>
+      </div>
+
+      <div class="signupParent">
+        <div class="signupContainer"></div>
+        <span class="signupLabel">Signup</span>
+      </div>
+
+
+
+    </div>
+  </body>
+</html>
+<br /><br />
