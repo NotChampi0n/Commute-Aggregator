@@ -35,15 +35,6 @@
   left: 51px;
   overflow: hidden;
 }
-input{
-  width: 227px;
-  height: 19px;
-  background: rgba(255, 255, 255, 1);
-  border: none;
-  outline: none;
-  font-size: large;
-  font-weight: bolder;
-}
 .emailParent {
   width: 285px;
   height: 30px;

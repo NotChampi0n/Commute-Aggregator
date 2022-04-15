@@ -71,15 +71,6 @@
   left: 51px;
   overflow: hidden;
 }
-input{
-  width: 227px;
-  height: 19px;
-  background: rgba(255, 255, 255, 1);
-  border: none;
-  outline: none;
-  font-size: large;
-  font-weight: bolder;
-}
 .apiParent {
   width: 360px;
   height: 469px;

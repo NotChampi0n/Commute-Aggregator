@@ -199,3 +199,12 @@ body {
   background-color: #072227;
   opacity: 0.9;
 }
+input{
+  width: 227px;
+  height: 19px;
+  background: rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-weight: bolder;
+}
