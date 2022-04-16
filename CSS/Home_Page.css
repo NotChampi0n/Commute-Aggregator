@@ -148,19 +148,22 @@
   text-align: center;
 }
 .loadingGifParent {
-  width: 256px;
-  height: 36px;
+  width: 200px;
+  height: 100px;
   position: absolute;
   top: 649px;
-  left: 52px;
+  left: 85px;
   overflow: hidden;
 }
 .loadingGifContainer {
-  width: 256px;
-  height: 36px;
-  background: rgba(255, 255, 255, 1);
+  width: 200px;
+  height: 100px;
   position: absolute;
   top: 0px;
   left: 0px;
   overflow: hidden;
+}
+.loadingGif{
+  width: 95%;
+  height: 95%;
 }
