@@ -133,19 +133,19 @@
   overflow: hidden;
 }
 .uberApiParent {
-  width: 100px;
+  width: 88px;
   height: 469px;
   position: absolute;
   top: 0px;
-  left: 225px;
+  left: 212px;
   overflow: hidden;
 }
 .uberApiContainer {
-  width: 100px;
+  width: 61px;
   height: 469px;
-  left: 0px;
   background: rgba(255, 255, 255, 1);
-  position: relative;
+  position: absolute;
+  left: 27px;
   border: 1px solid rgba(0, 0, 0, 1);
   overflow: hidden;
 }
@@ -155,7 +155,6 @@
   background: rgba(255, 255, 255, 1);
   position: absolute;
   top: 150px;
-  left: 10px;
   border: 1px solid rgba(0, 0, 0, 1);
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
