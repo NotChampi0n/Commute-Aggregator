@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap"  />
     <link rel="stylesheet" href="/CSS/Complaint_Page.css" />
     <link rel="stylesheet" href="/CSS/CSSCommon.css" />
+    <script src="/JS/complaint_page.js"></script>
   </head>
 
   <body>
@@ -56,22 +57,23 @@
         <span class="categoryLabel">Category of Complaint</span>
       </div>
 
-      <div class="ssViewParent">
-        <div class="ssViewContainer"></div>
-        <div class="ssViewInput"></div>
+      <div class="textareaParent">
+        <div class="textareaContainer"></div>
+        <div class="textareaInput">
+          <textarea id="complaint" name="complaint"></textarea>
+        </div>
       </div>
 
-      <div class="attachssParent">
+      <div class="attachssParent" onclick="takeInput()">
         <div class="attachssContainer">
           <div class="attachssChild"></div>
-          <span class="attachssLabel">
-            <!-- Attach Screenshot -->
-            <input type="file" name="ss" id="ss">
-          </span>
+          <span class="attachssLabel">Attach Screenshot</span>
         </div>
 
         <div class="imgParent">
-          <div class="imgContainer"></div>
+          <div class="imgContainer">
+            <img class="icon" src="/Media/AttachmentIcon.png"/>
+          </div>
         </div>
       </div>
 
