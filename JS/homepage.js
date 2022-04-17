@@ -5,3 +5,14 @@ function swap(){
     document.getElementById('from').value = to;
     document.getElementById('to').value = from;
 }
+function checkField(){
+    var from, to;
+    from = document.getElementById('from').value;
+    to = document.getElementById('to').value;
+    if(from == "" || to == ""){
+        alert('Please enter locations')
+    }
+    else{
+        location.href='/HTML/API_Page.html'
+    }
+}
