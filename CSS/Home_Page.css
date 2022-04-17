@@ -167,3 +167,6 @@
   width: 95%;
   height: 95%;
 }
+img {
+  transition: visibility 10s linear;
+}
