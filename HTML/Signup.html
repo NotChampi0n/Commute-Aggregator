@@ -3,8 +3,8 @@
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" />
     <link rel="stylesheet" href="/CSS/Signup.css" />
-    <link rel="stylesheet" href="/CSS/CSSCommon.css" />
-    <script src="/JS/signup.js"></script>
+    <link rel="stylesheet" href="/CSS/Common_CSS.css" />
+    <script src="/JS/homepage.js"></script>
   </head>
 
   <body>
@@ -14,7 +14,16 @@
       <div class="navbarParent">
         <div class="navbarContainer"></div>
         <span class="comAgg" onclick="location.href='/HTML/Home_Page.html'">Commute Aggregator</span>
-        <span class="platforms black_left_border">Platforms</span>
+        <div class="platforms black_left_border">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Platforms</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Ola</a>
+              <a href="#">Uber</a>
+              <a href="#">Revv</a>
+            </div>
+          </div>
+        </div>
         <span class="contactUs black_left_border" onclick="location.href='/HTML/Complaint_Page.html'">Contact Us</span>
         <span class="login black_left_border" onclick="location.href='/HTML/Login.html'">Login</span>
       </div>

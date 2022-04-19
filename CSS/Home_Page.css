@@ -1,6 +1,6 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 .fromParent {
   width: 285px;
   height: 30px;
@@ -47,14 +47,13 @@
   width: 50px;
   height: 50px;
   position: absolute;
-  /* Change to move the Swap Box */
-  top: 300px;
+  top: 250px;
   left: 154px;
   overflow: hidden;
 }
 .swapContainer {
   width: 50px;
-  height: 50px;
+  height: 40px;
   padding-top: 5px;
   text-align: center;
   font-size: 30px;
@@ -64,7 +63,7 @@
 }
 .swap_img {
   position: relative;
-  top: 6px;
+  top: 2px;
   width: 30px;
   height: 30px;
 }
@@ -75,7 +74,7 @@
   width: 285px;
   height: 30px;
   position: absolute;
-  top: 452px;
+  top: 352px;
   left: 37px;
   overflow: hidden;
 }
@@ -117,7 +116,7 @@
   width: 170px;
   height: 35px;
   position: absolute;
-  top: 577px;
+  top: 477px;
   left: 95px;
   overflow: hidden;
 }
