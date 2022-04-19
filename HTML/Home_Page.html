@@ -5,10 +5,11 @@
     <link rel="stylesheet" href="/CSS/Home_Page.css" />
     <link rel="stylesheet" href="/CSS/CSSCommon.css" />
     <script src="/JS/homepage.js"></script>
+    <script src="/JS/dummy_api.js"></script>
   </head>
   
   <body>
-    
+    <form name="my_form">
     <div class="parent">
 
       <div class="navbarParent">
@@ -48,15 +49,21 @@
         <div class="To_GPS"></div>
       </div>
 
-      <div class="sncParent" onclick="checkField()">
+      
+
+      <div class="sncParent" onclick="checkField();getDummyCars()">
         <div class="sncContainer"></div>
         <span class="sncLabel">Search and Compare</span>
       </div>
+      
+      
 
       <div class="loadingGifParent">
         <div class="loadingGifContainer"></div>
         <img class="loadingGif" src="/Media/CarLoadingGif.gif" > 
       </div>      
     </div>
+  </form>
+    
   </body>
 </html>

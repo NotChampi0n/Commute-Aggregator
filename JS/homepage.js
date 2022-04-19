@@ -1,3 +1,4 @@
+
 function swap(){
     var from, to;
     from = document.getElementById('from').value;
@@ -13,7 +14,12 @@ function checkField(){
         alert('Please enter locations')
     }
     else{
-        location.href='/HTML/API_Page.html'
+        setTimeout(
+            function(){
+                location.href='/HTML/API_Page.html'
+            }, 3000
+        )
+        
     }
 }
 function takeInput(){

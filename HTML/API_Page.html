@@ -1,69 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" />
-    <link rel="stylesheet" href="/CSS/API_Page.css" />
-    <link rel="stylesheet" href="/CSS/CSSCommon.css" />
-    <script src="/JS/homepage.js"></script>
-  </head>
 
-  <body>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" />
+  <link rel="stylesheet" href="/CSS/API_Page.css" />
+  <link rel="stylesheet" href="/CSS/CSSCommon.css" />
+  <script src="/JS/homepage.js"></script>
+  <script src="/JS/dummy_api.js"></script>
+</head>
 
-    <div class="parent">
+<body>
 
-      <div class="navbarParent">
-        <div class="navbarContainer"></div>
-        <span class="comAgg" onclick="location.href='/HTML/Home_Page.html'">Commute Aggregator</span>
-        <span class="platforms black_left_border">Platforms</span>
-        <span class="contactUs black_left_border" onclick="location.href='/HTML/Complaint_Page.html'">Contact Us</span>
-        <span class="login black_left_border" onclick="location.href='/HTML/Login.html'">Login</span>
-      </div>
+  <div class="parent">
 
-      <div class="bgContainer">
-        <div class="map"></div>
-        <div class="maptint"></div>
-      </div>
-
-
-      <div class="fromParent">
-        <div class="fromContainer"></div>
-        <span class="fromLabel">From</span>
-        <div class="fromInput">
-          <input type="text" name="from" id="from">
-        </div>
-      </div>
-
-      <div class="swapParent">
-        <div class="swapContainer">
-          <img class="swap_img" src="/Media/swap.png" id="swap" onclick="swap()"/>
-        </div>
-      </div>
-
-      <div class="toParent">
-        <div class="toContainer"></div>
-        <div class="toLabel">To</div>
-        <span class="toInput">
-          <input type="text" name="to" id="to">
-        </span>
-      </div>
-
-      <div class="searchParent">
-        <div class="searchContainer"></div>
-        <span class="searchLabel">Search</span>
-      </div>
-
-      <div class="apiParent">
-        <div class="uberApiParent">
-          <div class="uberApiContainer"></div>
-          <div class="uberApiBtn"></div>
-        </div>
-
-        <div class="revvApiParent">
-          <div class="revvApiContainer"></div>
-          <div class="revvApiBtn"></div>
-        </div>
-      </div>
-      
+    <div class="navbarParent">
+      <div class="navbarContainer"></div>
+      <span class="comAgg" onclick="location.href='/HTML/Home_Page.html'">Commute Aggregator</span>
+      <span class="platforms black_left_border">Platforms</span>
+      <span class="contactUs black_left_border" onclick="location.href='/HTML/Complaint_Page.html'">Contact Us</span>
+      <span class="login black_left_border" onclick="location.href='/HTML/Login.html'">Login</span>
     </div>
-  </body>
+
+    <div class="bgContainer">
+      <div class="map"></div>
+      <div class="maptint"></div>
+    </div>
+
+
+    <div class="fromParent">
+      <div class="fromContainer"></div>
+      <span class="fromLabel">From</span>
+      <div class="fromInput">
+        <input type="text" name="from" id="from">
+      </div>
+    </div>
+
+    <div class="swapParent">
+      <div class="swapContainer">
+        <img class="swap_img" src="/Media/swap.png" id="swap" onclick="swap()" />
+      </div>
+    </div>
+
+    <div class="toParent">
+      <div class="toContainer"></div>
+      <div class="toLabel">To</div>
+      <span class="toInput">
+        <input type="text" name="to" id="to">
+      </span>
+    </div>
+
+    <div class="searchParent">
+      <div class="searchContainer"></div>
+      <span class="searchLabel">Search</span>
+    </div>
+
+    <div class="apiParent">
+      <div class="uberApiParent">
+        <div class="uberApiContainer"></div>
+        <div class="uberApiBtn"></div>
+      </div>
+
+      <div class="revvApiParent">
+        <div class="revvApiContainer"></div>
+        <div class="revvApiBtn"></div>
+      </div>
+    </div>
+    
+  </div>
+  
+</body>
+
 </html>
