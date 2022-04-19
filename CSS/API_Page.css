@@ -1,6 +1,6 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 .fromParent {
   width: 285px;
   height: 30px;
@@ -40,23 +40,23 @@
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 135px;
-  left: 154px;
+  top: 140px;
+  left: 160px;
   overflow: hidden;
 }
 .swapContainer {
   width: 50px;
-  height: 50px;
+  height: 40px;
   padding-top: 5px;
   text-align: center;
   font-size: 30px;
   background: rgba(255, 211, 45, 1);
   position: relative;
-  border-radius: 50%;
+  border-radius: 60%;
 }
 .swap_img {
   position: relative;
-  top: 6px;
+  top: 2px;
   width: 30px;
   height: 30px;
 }
