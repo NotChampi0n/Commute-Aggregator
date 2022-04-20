@@ -17,7 +17,7 @@ function checkField(){
         setTimeout(
             function(){
                 location.href='/HTML/API_Page.html'
-            }, 3000
+            }, 7000
         )
         
     }
