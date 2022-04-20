@@ -1,6 +1,6 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 .fromParent {
   width: 285px;
   height: 30px;
