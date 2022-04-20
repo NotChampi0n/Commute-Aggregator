@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="/CSS/API_Page.css" />
   <link rel="stylesheet" href="/CSS/Common_CSS.css" />
   <script src="/JS/homepage.js"></script>
+  <script src="/JS/api_responsive.js"></script>
 </head>
 
 <body>
@@ -62,15 +63,15 @@
       <span class="searchLabel">Search</span>
     </div>
 
-    <div class="apiParent">
-      <div class="uberApiParent">
-        <div class="uberApiContainer"></div>
-        <div class="uberApiBtn"></div>
+    <div class="apiBox">
+      <div id="uberApiParent" class="apiParent">
+        <div id="uberApiContainer" class="apiContainer"></div>
+        <div id="uberApiBtn" class="apiBtn" onclick="stretchUberApi()"></div>
       </div>
 
-      <div class="revvApiParent">
-        <div class="revvApiContainer"></div>
-        <div class="revvApiBtn"></div>
+      <div id="revvApiParent" class="apiParent">
+        <div id="revvApiContainer" class="apiContainer"></div>
+        <div id="revvApiBtn" class="apiBtn" onclick="stretchRevvApi()"></div>
       </div>
     </div>
 

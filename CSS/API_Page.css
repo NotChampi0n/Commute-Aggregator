@@ -1,3 +1,6 @@
+/* * {
+  box-sizing: border-box;
+} */
 .fromParent {
   width: 285px;
   height: 30px;
@@ -121,7 +124,7 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
-.apiParent {
+.apiBox {
   width: 360px;
   height: 469px;
   position: absolute;
@@ -129,43 +132,20 @@
   left: 0px;
   overflow: hidden;
 }
-.uberApiParent {
+.apiParent{
   width: 88px;
   height: 469px;
   position: absolute;
   top: 0px;
+  overflow: hidden;
+}
+#uberApiParent {
   left: 212px;
-  overflow: hidden;
 }
-.uberApiContainer {
-  width: 61px;
-  height: 469px;
-  background: rgba(255, 255, 255, 1);
-  position: absolute;
-  left: 27px;
-  border: 1px solid rgba(0, 0, 0, 1);
-  overflow: hidden;
-}
-.uberApiBtn {
-  width: 27px;
-  height: 36px;
-  background: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 150px;
-  border: 1px solid rgba(0, 0, 0, 1);
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  overflow: hidden;
-}
-.revvApiParent {
-  width: 88px;
-  height: 469px;
-  position: absolute;
-  top: 0px;
+#revvApiParent {
   left: 272px;
-  overflow: hidden;
 }
-.revvApiContainer {
+.apiContainer{
   width: 61px;
   height: 469px;
   background: rgba(255, 255, 255, 1);
@@ -174,7 +154,7 @@
   border: 1px solid rgba(0, 0, 0, 1);
   overflow: hidden;
 }
-.revvApiBtn {
+.apiBtn{
   width: 27px;
   height: 36px;
   background: rgba(255, 255, 255, 1);
@@ -184,4 +164,7 @@
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   overflow: hidden;
+}
+#revvApiBtn{
+  top: 200px;
 }
