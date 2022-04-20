@@ -1,5 +1,6 @@
 function getDummyCars() {
-    fetch('https://infinite-depths-52748.herokuapp.com/api/cars', {
+    fetch('https://infinite-depths-52748.herokuapp.com/api/cars', 
+    {
         method: "POST",
         body: {
             "mode": "raw",

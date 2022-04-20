@@ -72,8 +72,8 @@
   overflow: hidden;
 }
 .loginParent {
-  width: 74px;
-  height: 35px;
+  width: 75px;
+  height: 40px;
   position: absolute;
   top: 368px;
   left: 143px;
@@ -92,14 +92,14 @@
   width: 57px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 9px;
+  left: 10px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
 .signupParent {
-  width: 260px;
-  height: 35px;
+  width: 265px;
+  height: 40px;
   position: absolute;
   top: 440px;
   left: 55px;
@@ -118,8 +118,8 @@
   width: 240px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 9px;
+  left: 10px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }

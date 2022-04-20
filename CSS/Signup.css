@@ -108,8 +108,8 @@
   overflow: hidden;
 }
 .sOtpParent {
-  width: 136px;
-  height: 28px;
+  width: 140px;
+  height: 30px;
   position: absolute;
   top: 269px;
   left: 112px;
@@ -128,8 +128,8 @@
   width: 103px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 4px;
-  left: 17px;
+  top: 5px;
+  left: 20px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
@@ -169,8 +169,8 @@
   overflow: hidden;
 }
 .signupParent {
-  width: 74px;
-  height: 35px;
+  width: 75px;
+  height: 40px;
   position: absolute;
   top: 526px;
   left: 143px;
@@ -189,8 +189,8 @@
   width: 57px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 9px;
+  left: 10px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
