@@ -115,6 +115,9 @@
   left: 112px;
   overflow: hidden;
 }
+.sOtpParent:hover{
+  cursor: pointer;
+}
 .sOtpContainer {
   width: 136px;
   height: 28px;
@@ -175,6 +178,9 @@
   top: 526px;
   left: 143px;
   overflow: hidden;
+}
+.signupParent:hover{
+  cursor: pointer;
 }
 .signupContainer {
   width: 74px;
