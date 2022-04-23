@@ -106,6 +106,9 @@
   left: 143px;
   overflow: hidden;
 }
+.searchParent:hover{
+  cursor: pointer;
+}
 .searchContainer {
   width: 74px;
   height: 35px;
