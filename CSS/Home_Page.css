@@ -1,0 +1,168 @@
+/* * {
+  box-sizing: border-box;
+} */
+.fromParent {
+  width: 285px;
+  height: 30px;
+  position: absolute;
+  top: 167px;
+  left: 37px;
+  overflow: hidden;
+}
+.fromContainer {
+  width: 285px;
+  height: 30px;
+  background: rgba(255, 211, 45, 1);
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
+.fromLabel {
+  width: 35px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.fromInput {
+  width: 227px;
+  height: 19px;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 5px;
+  left: 51px;
+  overflow: hidden;
+}
+.From_GPS {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 5px;
+  left: 262px;
+  overflow: hidden;
+}
+.swapParent {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 250px;
+  left: 154px;
+  overflow: hidden;
+}
+.swapContainer {
+  width: 50px;
+  height: 40px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 30px;
+  background: rgba(255, 211, 45, 1);
+  position: relative;
+  border-radius: 50%;
+}
+.swap_img {
+  position: relative;
+  top: 2px;
+  width: 30px;
+  height: 30px;
+}
+.swap_img:hover{
+  cursor: pointer;
+}
+.toParent {
+  width: 285px;
+  height: 30px;
+  position: absolute;
+  top: 352px;
+  left: 37px;
+  overflow: hidden;
+}
+.toContainer {
+  width: 285px;
+  height: 30px;
+  background: rgba(255, 211, 45, 1);
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
+.toLabel {
+  width: 17px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.toInput {
+  width: 227px;
+  height: 19px;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 5px;
+  left: 51px;
+  overflow: hidden;
+}
+.To_GPS {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 7px;
+  left: 262px;
+  overflow: hidden;
+}
+.sncParent {
+  width: 172px;
+  height: 40px;
+  position: absolute;
+  top: 477px;
+  left: 95px;
+  overflow: hidden;
+}
+.sncParent:hover{
+  cursor: pointer;
+}
+.sncContainer {
+  width: 170px;
+  height: 35px;
+  background: rgba(255, 211, 45, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+  overflow: hidden;
+}
+.sncLabel {
+  width: 146px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.loadingGifParent {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 649px;
+  left: 85px;
+  overflow: hidden;
+}
+.loadingGifContainer {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.loadingGif{
+  width: 95%;
+  height: 95%;
+}
