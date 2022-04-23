@@ -1,4 +1,3 @@
-
 function swap(){
     var from, to;
     from = document.getElementById('from').value;
