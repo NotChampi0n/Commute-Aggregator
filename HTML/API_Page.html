@@ -15,7 +15,7 @@
 
     <div class="navbarParent">
       <div class="navbarContainer"></div>
-      <span class="comAgg" onclick="location.href='/HTML/Home_Page.html'">Commute Aggregator</span>
+      <span class="comAgg" onclick="location.href='/HTML/index.html'">Commute Aggregator</span>
       <div class="platforms black_left_border">
       <div class="dropdown">
           <button onclick="myFunction()" class="dropbtn">Platforms</button>
@@ -65,18 +65,32 @@
 
     <div class="apiBox">
       <div id="uberApiParent" class="apiParent">
-        <div id="uberApiContainer" class="apiContainer"></div>
+        <div id="uberApiContainer" class="apiContainer">
+          <div id= "uberLogo" class="carLogo">Uber</div>
+            <div class="uberItem carItem">Car 1</div>
+            <div class="uberItem carItem">Car 2</div>
+            <div class="uberItem carItem">Car 3</div>
+            <div class="uberItem carItem">Car 4</div>
+            <div class="uberItem carItem">Car 5</div>
+        </div>
         <div id="uberApiBtn" class="apiBtn" onclick="stretchUberApi()"></div>
       </div>
 
       <div id="revvApiParent" class="apiParent">
-        <div id="revvApiContainer" class="apiContainer"></div>
+        <div id="revvApiContainer" class="apiContainer">
+          <div id="revvLogo" class="carLogo">Revv</div>
+          <div class="revvItem carItem">Car 1</div>
+          <div class="revvItem carItem">Car 2</div>
+          <div class="revvItem carItem">Car 3</div>
+          <div class="revvItem carItem">Car 4</div>
+          <div class="revvItem carItem">Car 5</div>
+        </div>
         <div id="revvApiBtn" class="apiBtn" onclick="stretchRevvApi()"></div>
       </div>
     </div>
 
   </div>
-  
+
 </body>
 
 </html>
