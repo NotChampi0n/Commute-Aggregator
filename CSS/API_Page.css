@@ -166,7 +166,6 @@
 }
 .apiContainer>.carItem{
   display: none;
-  text-align: center;
 }
 .uberUList{
   position: absolute;
@@ -197,12 +196,25 @@
 #revvApiBtn{
   top: 200px;
 }
-.listCarImage{
+.car1{
   background-image: url("/Media/olac1.png");
   background-repeat: no-repeat;
-  width: 50px;
+  position: relative;
+  top: 5px;
+  left: 5px;
   height: 50px;
-  top: 0px;
-  left: 10px;
-  position: absolute;
+}
+.car2{
+  background-image: url("/Media/olac2.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  height: 50px;
+}
+.uberCarInfo{
+  position: relative;
+  left: 125px;
+  top: 20px;
+  display: block;
 }
