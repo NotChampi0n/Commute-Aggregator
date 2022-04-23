@@ -218,3 +218,10 @@
   top: 20px;
   display: block;
 }
+.rideSmallText{
+  font-size: 10px;
+  position: relative;
+  left: 10px;
+  top: 20px;
+  display: flex;
+}
