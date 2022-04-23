@@ -22,23 +22,23 @@ function getDummyCars() {
     }).then(function (response) {
         return response.json();
     }).then(function (text) {
-
         //var dummy_api_list_models = [];
         for (i = 0; i < 5; i++) {
             dummy_api_list_models.push(text['cars'][i].model)
             dummy_api_list_rentPerDay.push(text['cars'][i].rentPerDay)
             dummy_api_list_seatingCapacity.push(text['cars'][i].seatingCapacity)
         }
+        document.getElementById("uberPrice1").innerHTML = dummy_api_list_rentPerDay[0] * 4
+        document.getElementById("uberPrice2").innerHTML = dummy_api_list_rentPerDay[1] * 4
+        document.getElementById("uberPrice3").innerHTML = dummy_api_list_rentPerDay[2] * 4
+        document.getElementById("uberPrice4").innerHTML = dummy_api_list_rentPerDay[3] * 4
+        document.getElementById("uberPrice5").innerHTML = dummy_api_list_rentPerDay[4] * 4
 
-        // This is how you can populate the data to the screen
-        //document.getElementById("to").value = text['cars'][1].model
-
-        // ---- Logic to filter data ---- 
-        // for(i=0;i<text['cars'].length;i++){
-        //     if(text['cars'][i]['city'] == "Hyd"){ //isme jo "Hyd" hai wo user ka city
-        //         //kuch bhi kar idhar
-        //     }
-        // }
+        document.getElementById("uberModel1").innerHTML = dummy_api_list_models[0]
+        document.getElementById("uberModel2").innerHTML = dummy_api_list_models[1]
+        document.getElementById("uberModel3").innerHTML = dummy_api_list_models[2]
+        document.getElementById("uberModel4").innerHTML = dummy_api_list_models[3]
+        document.getElementById("uberModel5").innerHTML = dummy_api_list_models[4]
 
     })
 
@@ -62,18 +62,46 @@ function getDummyCars() {
         var keys = Object.keys(text.quotes);
         var key_name = keys[0]
         var vehicles = text.quotes['', key_name].vehicles
-        
 
-        for (i = 0; i < 5; i++) {
+
+        for (i = 0; i < vehicles.length; i++) {
+            for (i = 0; i < 3; i++) {
+                if (vehicles[i].class != 'Standard') {
+                    taxicode_list_class.push(vehicles[i].class)
+                }
+            }
+
             taxicode_list_class.push(vehicles[i].class)
             taxicode_list_price.push(vehicles[i].price)
             taxicode_list_passengers.push(vehicles[i].passengers)
         }
 
+        document.getElementById("revvPrice1").innerHTML = taxicode_list_price[0]
+        document.getElementById("revvPrice2").innerHTML = taxicode_list_price[1]
+        document.getElementById("revvPrice3").innerHTML = taxicode_list_price[2]
+        document.getElementById("revvPrice4").innerHTML = taxicode_list_price[3]
+        document.getElementById("revvPrice5").innerHTML = taxicode_list_price[4]
+
+        document.getElementById("revvModel1").innerHTML = taxicode_list_class[0]
+        document.getElementById("revvModel2").innerHTML = taxicode_list_class[1]
+        document.getElementById("revvModel3").innerHTML = taxicode_list_class[2]
+        document.getElementById("revvModel4").innerHTML = taxicode_list_class[3]
+        document.getElementById("revvModel5").innerHTML = taxicode_list_class[4]
         console.log(taxicode_list_class)
 
 
 
     })
 
+}
+
+
+
+function populate() {
+    console.log('3', dummy_api_list_rentPerDay[0])
+
+
+
+
+    console.log(document.getElementById("uber1"))
 }
