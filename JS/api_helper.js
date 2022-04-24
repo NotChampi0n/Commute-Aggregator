@@ -28,17 +28,23 @@ function getDummyCars() {
             dummy_api_list_rentPerDay.push(text['cars'][i].rentPerDay)
             dummy_api_list_seatingCapacity.push(text['cars'][i].seatingCapacity)
         }
-        document.getElementById("uberPrice1").innerHTML = dummy_api_list_rentPerDay[0] * 4
-        document.getElementById("uberPrice2").innerHTML = dummy_api_list_rentPerDay[1] * 4
-        document.getElementById("uberPrice3").innerHTML = dummy_api_list_rentPerDay[2] * 4
-        document.getElementById("uberPrice4").innerHTML = dummy_api_list_rentPerDay[3] * 4
-        document.getElementById("uberPrice5").innerHTML = dummy_api_list_rentPerDay[4] * 4
+        document.getElementById("uberPrice1").innerHTML = `₹ ${dummy_api_list_rentPerDay[3] * 13}`
+        document.getElementById("uberPrice2").innerHTML = `₹ ${dummy_api_list_rentPerDay[4] * 14}`
+        document.getElementById("uberPrice3").innerHTML = `₹ ${dummy_api_list_rentPerDay[1] * 16}`
+        document.getElementById("uberPrice4").innerHTML = `₹ ${dummy_api_list_rentPerDay[2] * 18}`
+        document.getElementById("uberPrice5").innerHTML = `₹ ${dummy_api_list_rentPerDay[0] * 15}`
 
         document.getElementById("uberModel1").innerHTML = dummy_api_list_models[0]
         document.getElementById("uberModel2").innerHTML = dummy_api_list_models[1]
         document.getElementById("uberModel3").innerHTML = dummy_api_list_models[2]
         document.getElementById("uberModel4").innerHTML = dummy_api_list_models[3]
         document.getElementById("uberModel5").innerHTML = dummy_api_list_models[4]
+
+        document.getElementById("uberSeat1").innerHTML = dummy_api_list_seatingCapacity[0]
+        document.getElementById("uberSeat2").innerHTML = dummy_api_list_seatingCapacity[1]
+        document.getElementById("uberSeat3").innerHTML = dummy_api_list_seatingCapacity[2]
+        document.getElementById("uberSeat4").innerHTML = dummy_api_list_seatingCapacity[3]
+        document.getElementById("uberSeat5").innerHTML = dummy_api_list_seatingCapacity[4]
 
     })
 
@@ -60,48 +66,32 @@ function getDummyCars() {
         return response.json();
     }).then(function (text) {
         var keys = Object.keys(text.quotes);
-        var key_name = keys[0]
+        var key_name = keys[1]
         var vehicles = text.quotes['', key_name].vehicles
 
-
+        console.log(vehicles.length)
         for (i = 0; i < vehicles.length; i++) {
-            for (i = 0; i < 3; i++) {
-                if (vehicles[i].class != 'Standard') {
-                    taxicode_list_class.push(vehicles[i].class)
-                }
-            }
-
+            
             taxicode_list_class.push(vehicles[i].class)
             taxicode_list_price.push(vehicles[i].price)
             taxicode_list_passengers.push(vehicles[i].passengers)
+            console.log(vehicles[i].class)
         }
-
-        document.getElementById("revvPrice1").innerHTML = taxicode_list_price[0]
-        document.getElementById("revvPrice2").innerHTML = taxicode_list_price[1]
-        document.getElementById("revvPrice3").innerHTML = taxicode_list_price[2]
-        document.getElementById("revvPrice4").innerHTML = taxicode_list_price[3]
-        document.getElementById("revvPrice5").innerHTML = taxicode_list_price[4]
+        
+        document.getElementById("revvPrice1").innerHTML = `₹ ${taxicode_list_price[0] * 2}`
+        document.getElementById("revvPrice2").innerHTML = `₹ ${taxicode_list_price[1] * 3}`
+        document.getElementById("revvPrice3").innerHTML = `₹ ${taxicode_list_price[2] * 4}`
+        document.getElementById("revvPrice4").innerHTML = `₹ ${taxicode_list_price[3] * 5}`
+        document.getElementById("revvPrice5").innerHTML = `₹ ${taxicode_list_price[4] * 7}`
 
         document.getElementById("revvModel1").innerHTML = taxicode_list_class[0]
         document.getElementById("revvModel2").innerHTML = taxicode_list_class[1]
-        document.getElementById("revvModel3").innerHTML = taxicode_list_class[2]
-        document.getElementById("revvModel4").innerHTML = taxicode_list_class[3]
-        document.getElementById("revvModel5").innerHTML = taxicode_list_class[4]
-        console.log(taxicode_list_class)
-
-
+        document.getElementById("revvModel3").innerHTML = taxicode_list_class[8]
+        document.getElementById("revvModel4").innerHTML = taxicode_list_class[9]
+        document.getElementById("revvModel5").innerHTML = taxicode_list_class[10]
 
     })
 
 }
 
 
-
-function populate() {
-    console.log('3', dummy_api_list_rentPerDay[0])
-
-
-
-
-    console.log(document.getElementById("uber1"))
-}
