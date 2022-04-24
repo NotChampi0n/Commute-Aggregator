@@ -126,6 +126,14 @@
   top: 9px;
   left: 7px;
   overflow: hidden;
+  font-size: 12px;
+  font-family: Righteous;
+  font-weight: 100;
+}
+#complaint{
+  font-size: 12px;
+  font-family: Righteous;
+  font-weight:100;
 }
 .attachssParent {
   width: 197px;
