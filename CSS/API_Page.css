@@ -248,3 +248,19 @@
   left: 125px;
   height: 20px;
 }
+.suv{
+  background-image: url("/Media/suv.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  height: 50px;
+}
+.sedan{
+  background-image: url("/Media/sedan.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  height: 50px;
+}
