@@ -226,17 +226,25 @@
   display: flex;
 }
 .seatingText{
-  font-size: 10px;
+  font-size: 12px;
   position: relative;
-  left: 145px;
-  top: -12px;
+  left: 140px;
+  top: -18px;
   display: inline;
 }
-.seatingLogo{
+.uberSeatingLogo{
   background-image: url("/Media/passengericon.png");
   background-repeat: no-repeat;
   position: relative;
   top: -35px;
   left: 125px;
-  height: 25px;
+  height: 30px;
+}
+.revvSeatingLogo{
+  background-image: url("/Media/passengericon.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -20px;
+  left: 125px;
+  height: 20px;
 }

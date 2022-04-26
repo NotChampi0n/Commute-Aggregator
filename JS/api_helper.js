@@ -28,11 +28,11 @@ function getDummyCars() {
             dummy_api_list_rentPerDay.push(text['cars'][i].rentPerDay)
             dummy_api_list_seatingCapacity.push(text['cars'][i].seatingCapacity)
         }
-        document.getElementById("uberPrice1").innerHTML = `₹ ${dummy_api_list_rentPerDay[3] * 13}`
-        document.getElementById("uberPrice2").innerHTML = `₹ ${dummy_api_list_rentPerDay[4] * 14}`
-        document.getElementById("uberPrice3").innerHTML = `₹ ${dummy_api_list_rentPerDay[1] * 16}`
-        document.getElementById("uberPrice4").innerHTML = `₹ ${dummy_api_list_rentPerDay[2] * 18}`
-        document.getElementById("uberPrice5").innerHTML = `₹ ${dummy_api_list_rentPerDay[0] * 15}`
+        document.getElementById("uberPrice1").innerHTML = `₹${dummy_api_list_rentPerDay[3] * 13}`
+        document.getElementById("uberPrice2").innerHTML = `₹${dummy_api_list_rentPerDay[4] * 14}`
+        document.getElementById("uberPrice3").innerHTML = `₹${dummy_api_list_rentPerDay[1] * 16}`
+        document.getElementById("uberPrice4").innerHTML = `₹${dummy_api_list_rentPerDay[2] * 18}`
+        document.getElementById("uberPrice5").innerHTML = `₹${dummy_api_list_rentPerDay[0] * 15}`
 
         document.getElementById("uberModel1").innerHTML = dummy_api_list_models[0]
         document.getElementById("uberModel2").innerHTML = dummy_api_list_models[1]
