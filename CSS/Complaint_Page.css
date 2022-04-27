@@ -109,6 +109,7 @@ select{
   border: none;
   font-size: 12px;
   font-weight: bold;
+  background-color: white;
 } 
 option{
   background-color: rgba(255, 211, 45, 1);
