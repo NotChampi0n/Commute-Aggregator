@@ -87,20 +87,32 @@
   overflow: hidden;
 }
 .categoryLabel {
-  width: 166px;
+  width: 72px;
   position: absolute;
   top: 6px;
   left: 3px;
   text-align: center;
 }
 .categoryInput {
-  width: 109px;
+  width: 200px;
   height: 19px;
   background: rgba(255, 255, 255, 1);
   position: absolute;
   top: 6px;
-  left: 169px;
+  left: 77px;
   overflow: hidden;
+}
+select{
+  width: 200px;
+  height: 19px;
+  outline: none;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+} 
+option{
+  background-color: rgba(255, 211, 45, 1);
+  color: black;
 }
 .textareaParent {
   width: 285px;
@@ -235,13 +247,3 @@
 .icon:hover{
   cursor: pointer;
 }
-
-
-
-/* select{
-  width: 109px;
-  height: 19px;
-  outline: none;
-  border: none;
-  font-size: 12px;
-} */
