@@ -107,68 +107,41 @@
   left: 111px;
   overflow: hidden;
 }
-.sOtpParent {
-  width: 140px;
-  height: 30px;
-  position: absolute;
-  top: 269px;
-  left: 112px;
-  overflow: hidden;
-}
-.sOtpParent:hover{
-  cursor: pointer;
-}
-.sOtpContainer {
-  width: 136px;
-  height: 28px;
-  background: rgba(255, 211, 45, 1);
-  position: relative;
-  border: 1px solid rgba(0, 0, 0, 1);
-  border-radius: 75px;
-  overflow: hidden;
-}
-.sOtpLabel {
-  width: 103px;
-  color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 5px;
-  left: 20px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-align: center;
-}
-.otpParent {
+.pwdParent {
   width: 285px;
   height: 30px;
   position: absolute;
-  top: 455px;
+  top: 238px;
   left: 37px;
   overflow: hidden;
 }
-.otpContainer {
+.pwdContainer {
   width: 285px;
   height: 30px;
   background: rgba(255, 211, 45, 1);
-  position: absolute;
+  position: relative;
+  top: 0px;
+  left: 0px;
   border: 1px solid rgba(0, 0, 0, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
-.otpLabel {
-  width: 30px;
+.pwdLabel {
+  width: 55px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 5px;
+  top: 6px;
   left: 7px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
-.otpInput {
-  width: 232px;
+.pwdInput {
+  width: 193px;
   height: 19px;
   background: rgba(255, 255, 255, 1);
   position: absolute;
   top: 5px;
-  left: 46px;
+  left: 85px;
   overflow: hidden;
 }
 .signupParent {
