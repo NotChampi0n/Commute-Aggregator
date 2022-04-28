@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap"  />
-    <link rel="stylesheet" href="/CSS/Common_CSS.css" />
-    <link rel="stylesheet" href="/CSS/Home_Page.css" />
-    <script src="/JS/homepage.js"></script>
-    <script src="/JS/api_helper.js"></script>
-  </head>
-  
-  <body>
-    <form name="my_form">
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" />
+  <link rel="stylesheet" href="/CSS/Common_CSS.css" />
+  <link rel="stylesheet" href="/CSS/Home_Page.css" />
+  <script src="/JS/homepage.js"></script>
+  <script src="/JS/api_helper.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOAKTMVoHS5qFNZ5M3QD0_60F9BfTS_I0&libraries=places"> -->
+  <!-- </script> -->
+</head>
+
+<body>
+  <form name="my_form">
     <div class="parent">
 
       <div class="navbarParent">
         <div class="navbarContainer"></div>
         <span class="comAgg" onclick="location.href='/index.html'">Commute Aggregator</span>
         <div class="platforms black_left_border">
-        <div class="dropdown" >
-            <button onclick="myFunction()" class="dropbtn" ondblclick="location.href='/HTML/API_Page.html'">Platforms</button>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"
+              ondblclick="location.href='/HTML/API_Page.html'">Platforms</button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="#">Uber</a>
-              <a href="#">Revv</a>
+              <a href="https://m.uber.com/looking">Uber</a>
+              <a href="https://www.revv.co.in/">Revv</a>
             </div>
           </div>
         </div>
@@ -44,7 +49,7 @@
 
       <div class="swapParent" onclick="swap()">
         <div class="swapContainer">
-          <img class="swap_img" src="/Media/swap.png" id="swap"/>
+          <img class="swap_img" src="/Media/swap.png" id="swap" />
         </div>
       </div>
 
@@ -57,22 +62,32 @@
         <div class="To_GPS"></div>
       </div>
 
-      
+
 
       <div class="sncParent" onclick="checkField()">
         <div class="sncContainer"></div>
         <span class="sncLabel">Search and Compare</span>
       </div>
-      
-      
+
+
 
       <div class="loadingGifParent">
         <div class="loadingGifContainer"></div>
-        <img class="loadingGif" src="/Media/CarLoadingGif.gif" > 
+        <img class="loadingGif" src="/Media/CarLoadingGif.gif">
       </div>
-     
+
     </div>
   </form>
-    
-  </body>
+  <!-- Google Places -->
+  <!-- <script type="text/javascript">
+    $(document).ready(function(){
+      var autocomplete;
+      
+      automcomplete = new google.maps.places.Autocomplete((document.getElementById("from")),{
+        types:['geocode']
+      })
+    })
+  </script> -->
+</body>
+
 </html>

@@ -6,7 +6,8 @@ var taxicode_list_class = [];
 var taxicode_list_passengers = [];
 var taxicode_list_price = [];
 
-function getDummyCars() {
+function getUberCars() {
+    console.log("Uber called")
     fetch('https://infinite-depths-52748.herokuapp.com/api/cars', {
         method: "POST",
         body: {
@@ -48,6 +49,10 @@ function getDummyCars() {
 
     })
 
+}
+
+function getRevvCars() {
+    console.log("Revv called")
     const date = new Date();
     date.setHours(date.getHours() + 1)
     const unixDate = Math.floor(date.getTime() / 1000)
@@ -65,24 +70,25 @@ function getDummyCars() {
     }).then(function (response) {
         return response.json();
     }).then(function (text) {
+        console.log(text)
         var keys = Object.keys(text.quotes);
         var key_name = keys[1]
         var vehicles = text.quotes['', key_name].vehicles
 
         console.log(vehicles.length)
         for (i = 0; i < vehicles.length; i++) {
-            
+
             taxicode_list_class.push(vehicles[i].class)
             taxicode_list_price.push(vehicles[i].price)
             taxicode_list_passengers.push(vehicles[i].passengers)
-            console.log(vehicles[i].class)
+            console.log(vehicles[i].passengers)
         }
-        
+
         document.getElementById("revvPrice1").innerHTML = `₹ ${taxicode_list_price[0] * 2}`
         document.getElementById("revvPrice2").innerHTML = `₹ ${taxicode_list_price[1] * 3}`
-        document.getElementById("revvPrice3").innerHTML = `₹ ${taxicode_list_price[2] * 4}`
-        document.getElementById("revvPrice4").innerHTML = `₹ ${taxicode_list_price[3] * 5}`
-        document.getElementById("revvPrice5").innerHTML = `₹ ${taxicode_list_price[4] * 7}`
+        document.getElementById("revvPrice3").innerHTML = `₹ ${taxicode_list_price[8] * 4}`
+        document.getElementById("revvPrice4").innerHTML = `₹ ${taxicode_list_price[9] * 5}`
+        document.getElementById("revvPrice5").innerHTML = `₹ ${taxicode_list_price[10] * 7}`
 
         document.getElementById("revvModel1").innerHTML = taxicode_list_class[0]
         document.getElementById("revvModel2").innerHTML = taxicode_list_class[1]
@@ -90,8 +96,14 @@ function getDummyCars() {
         document.getElementById("revvModel4").innerHTML = taxicode_list_class[9]
         document.getElementById("revvModel5").innerHTML = taxicode_list_class[10]
 
+        document.getElementById("revvSeat1").innerHTML = taxicode_list_passengers[0]
+        document.getElementById("revvSeat2").innerHTML = taxicode_list_passengers[1]
+        document.getElementById("revvSeat3").innerHTML = taxicode_list_passengers[8]
+        document.getElementById("revvSeat4").innerHTML = taxicode_list_passengers[3]
+        document.getElementById("revvSeat5").innerHTML = taxicode_list_passengers[6]
+
+
+
     })
 
 }
-
-
