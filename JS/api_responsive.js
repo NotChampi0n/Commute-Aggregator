@@ -22,6 +22,7 @@ function setIds(){
 function stretchUberApi(){    
     console.log(isOpenUber)
     if(isOpenUber){
+        
         isOpenUber = false
         uberParent.style.width="88px";
         uberContainer.style.width="61px";

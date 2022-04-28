@@ -36,9 +36,9 @@ function getUberCars() {
         document.getElementById("uberPrice5").innerHTML = `₹${dummy_api_list_rentPerDay[0] * 15}`
 
         document.getElementById("uberModel1").innerHTML = dummy_api_list_models[0]
-        document.getElementById("uberModel2").innerHTML = dummy_api_list_models[1]
+        document.getElementById("uberModel2").innerHTML = dummy_api_list_models[3]
         document.getElementById("uberModel3").innerHTML = dummy_api_list_models[2]
-        document.getElementById("uberModel4").innerHTML = dummy_api_list_models[3]
+        document.getElementById("uberModel4").innerHTML = dummy_api_list_models[1]
         document.getElementById("uberModel5").innerHTML = dummy_api_list_models[4]
 
         document.getElementById("uberSeat1").innerHTML = dummy_api_list_seatingCapacity[0]
