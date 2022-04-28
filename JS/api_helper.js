@@ -84,11 +84,11 @@ function getRevvCars() {
             console.log(vehicles[i].passengers)
         }
 
-        document.getElementById("revvPrice1").innerHTML = `₹ ${taxicode_list_price[0] * 2}`
-        document.getElementById("revvPrice2").innerHTML = `₹ ${taxicode_list_price[1] * 3}`
-        document.getElementById("revvPrice3").innerHTML = `₹ ${taxicode_list_price[8] * 4}`
-        document.getElementById("revvPrice4").innerHTML = `₹ ${taxicode_list_price[9] * 5}`
-        document.getElementById("revvPrice5").innerHTML = `₹ ${taxicode_list_price[10] * 7}`
+        document.getElementById("revvPrice1").innerHTML = `₹${taxicode_list_price[0] * 2}`
+        document.getElementById("revvPrice2").innerHTML = `₹${taxicode_list_price[1] * 3}`
+        document.getElementById("revvPrice3").innerHTML = `₹${taxicode_list_price[8] * 4}`
+        document.getElementById("revvPrice4").innerHTML = `₹${taxicode_list_price[9] * 5}`
+        document.getElementById("revvPrice5").innerHTML = `₹${taxicode_list_price[10] * 7}`
 
         document.getElementById("revvModel1").innerHTML = taxicode_list_class[0]
         document.getElementById("revvModel2").innerHTML = taxicode_list_class[1]
