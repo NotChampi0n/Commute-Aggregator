@@ -18,7 +18,7 @@ function checkField() {
   }
 }
 
-function submitForm(){
+function submitLoginForm(){
   var email, pwd;
   email = document.getElementById('email').value;
   pwd = document.getElementById('password').value;

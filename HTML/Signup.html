@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" />
-    <link rel="stylesheet" href="/CSS/Signup.css" />
-    <link rel="stylesheet" href="/CSS/Common_CSS.css" />
-    <script src="/JS/homepage.js"></script>
-  </head>
 
-  <body>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" />
+  <link rel="stylesheet" href="/CSS/Signup.css" />
+  <link rel="stylesheet" href="/CSS/Common_CSS.css" />
+  <script src="/JS/homepage.js"></script>
+  <script src="/JS/signup_page.js"></script>
+</head>
+
+<body>
+
+  <form id="signup" name="signup" action="/PHP/signup.php" method="POST">
 
     <div class="parent">
 
@@ -25,53 +29,59 @@
               </div>
             </div>
           </div>
-          <span class="contactUs black_left_border" onclick="location.href='/HTML/Complaint_Page.html'">Contact Us</span>
+          <span class="contactUs black_left_border" onclick="location.href='/HTML/Complaint_Page.html'">Contact
+            Us</span>
           <span class="login black_left_border" onclick="location.href='/HTML/Login.html'">Login</span>
         </div>
 
-      <div class="bgContainer">
-        <div class="map"></div>
-        <div class="maptint"></div>
-      </div>
-
-      <div class="nameParent">
-        <div class="nameContainer"></div>
-        <span class="nameLabel">Name</span>
-        <div class="nameInput">
-          <input type="text" name="name" id="name">
+        <div class="bgContainer">
+          <div class="map"></div>
+          <div class="maptint"></div>
         </div>
-      </div>
 
-      <div class="emailParent">
-        <div class="emailContainer"></div>
-        <span class="emailLabel">Email ID</span>
-        <div class="emailInput">
-          <input type="email" name="email" id="email">
+        <div class="nameParent">
+          <div class="nameContainer"></div>
+          <span class="nameLabel">Name</span>
+          <div class="nameInput">
+            <input type="text" name="name" id="name">
+          </div>
         </div>
-      </div>
 
-      <div class="phNumParent">
-        <div class="phNumContainer"></div>
-        <span class="phNumLabel">Phone Number</span>
-        <div class="phNumInput">
-          <input type="text" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" name="phone" id="phone">
+        <div class="emailParent">
+          <div class="emailContainer"></div>
+          <span class="emailLabel">Email ID</span>
+          <div class="emailInput">
+            <input type="email" name="email" id="email">
+          </div>
         </div>
-      </div>
 
-      <div class="pwdParent">
-        <div class="pwdContainer"></div>
-        <span class="pwdLabel">Password</span>
-        <div class="pwdInput">
-          <input type="password" name="password" id="password">
+        <div class="phNumParent">
+          <div class="phNumContainer"></div>
+          <span class="phNumLabel">Phone Number</span>
+          <div class="phNumInput">
+            <input type="text" maxlength="10"
+              oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');"
+              name="phone" id="phone">
+          </div>
         </div>
+
+        <div class="pwdParent">
+          <div class="pwdContainer"></div>
+          <span class="pwdLabel">Password</span>
+          <div class="pwdInput">
+            <input type="password" name="password" id="password">
+          </div>
+        </div>
+
+        <div class="signupParent" onclick="submitSignupForm()">
+          <div class="signupContainer"></div>
+          <span class="signupLabel">Signup</span>
+        </div>
+
       </div>
 
-      <div class="signupParent">
-        <div class="signupContainer"></div>
-        <span class="signupLabel">Signup</span>
-      </div>
+  </form>
+</body>
 
-    </div>
-  </body>
 </html>
 <br /><br />
