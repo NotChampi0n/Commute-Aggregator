@@ -155,7 +155,6 @@
 }
 .signupParent:hover{
   cursor: pointer;
-  box-shadow: 0 6px 16px 0 rgb(255, 221, 98);
 }
 .signupContainer {
   width: 74px;

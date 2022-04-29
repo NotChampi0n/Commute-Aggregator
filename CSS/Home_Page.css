@@ -123,7 +123,6 @@
 }
 .sncParent:hover {
   cursor: pointer;
-  box-shadow: 0 6px 15px 0 rgb(255, 221, 98);
 }
 .sncContainer {
   width: 170px;
