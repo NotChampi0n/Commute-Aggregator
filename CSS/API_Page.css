@@ -112,6 +112,7 @@
 }
 .searchParent:hover {
   cursor: pointer;
+  box-shadow: 0 6px 15px 0 rgb(255, 221, 1);
 }
 .searchContainer {
   width: 74px;
@@ -170,6 +171,18 @@
 }
 .apiContainer > .carItem {
   display: none;
+}
+.logoUber{
+  background-image: url("/Media/UberLogo.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 20px;
+}
+.logoOla{
+  background-image: url("/Media/olaLogo.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 20px;
 }
 .uberUList {
   position: absolute;
