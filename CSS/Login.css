@@ -71,17 +71,19 @@
   left: 86px;
   overflow: hidden;
 }
-.loginParent:hover{
-  cursor: pointer;
-}
 .loginParent {
   cursor: pointer;
   width: 75px;
-  height: 40px;
+  height: 36px;
   position: absolute;
   top: 368px;
   left: 143px;
   overflow: hidden;
+  border-radius: 75px;
+}
+.loginParent:hover{
+  cursor: pointer;
+  box-shadow: 0 6px 16px 0 rgb(255, 221, 98);
 }
 .loginContainer {
   width: 74px;
