@@ -54,13 +54,16 @@
   position: relative;
   border-radius: 60%;
 }
+/* .swapParent:hover{
+  box-shadow: 0 12px 16px 0 rgb(255, 221, 98);
+} */
 .swap_img {
   position: relative;
   top: 2px;
   width: 30px;
   height: 30px;
 }
-.swap_img:hover{
+.swap_img:hover {
   cursor: pointer;
 }
 .toParent {
@@ -104,9 +107,10 @@
   position: absolute;
   top: 268px;
   left: 143px;
+  border-radius: 75px;
   overflow: hidden;
 }
-.searchParent:hover{
+.searchParent:hover {
   cursor: pointer;
 }
 .searchContainer {
@@ -135,7 +139,7 @@
   left: 0px;
   overflow: hidden;
 }
-.apiParent{
+.apiParent {
   width: 88px;
   height: 469px;
   position: absolute;
@@ -148,7 +152,7 @@
 #revvApiParent {
   left: 272px;
 }
-.apiContainer{
+.apiContainer {
   width: 61px;
   height: 469px;
   background: rgba(255, 255, 255, 1);
@@ -158,30 +162,30 @@
   overflow: hidden;
   border: solid 8px rgba(255, 211, 45, 1);
 }
-.apiContainer>.carLogo{
+.apiContainer > .carLogo {
   position: relative;
-  top:50px;
+  top: 50px;
   transform: rotate(90deg);
-  display:block;
+  display: block;
 }
-.apiContainer>.carItem{
+.apiContainer > .carItem {
   display: none;
 }
-.uberUList{
+.uberUList {
   position: absolute;
   top: 175px;
   left: 75px;
   width: 50px;
   height: 50px;
 }
-.revvUList{
+.revvUList {
   position: absolute;
   top: 175px;
   left: 75px;
   width: 50px;
   height: 50px;
 }
-.apiBtn{
+.apiBtn {
   width: 27px;
   height: 36px;
   background: rgba(255, 255, 255, 1);
@@ -193,10 +197,10 @@
   border-bottom-left-radius: 50px;
   overflow: hidden;
 }
-#revvApiBtn{
+#revvApiBtn {
   top: 200px;
 }
-.car1{
+.car1 {
   background-image: url("/Media/olac1.png");
   background-repeat: no-repeat;
   position: relative;
@@ -204,7 +208,7 @@
   left: 5px;
   height: 50px;
 }
-.car2{
+.car2 {
   background-image: url("/Media/olac2.png");
   background-repeat: no-repeat;
   position: relative;
@@ -212,27 +216,40 @@
   left: 5px;
   height: 50px;
 }
-.uberCarInfo{
+.uberCarInfo {
   position: relative;
   left: 125px;
   top: 18px;
   display: block;
 }
-.rideSmallText{
+.olaCarInfo {
+  position: relative;
+  left: 115px;
+  top: 18px;
+  display: block;
+}
+.rideSmallText {
   font-size: 10px;
   position: relative;
   left: 10px;
   top: 15px;
   display: flex;
 }
-.seatingText{
+.seatingText {
   font-size: 12px;
   position: relative;
   left: 140px;
   top: -18px;
   display: inline;
 }
-.uberSeatingLogo{
+.olaSeatingText {
+  font-size: 12px;
+  position: relative;
+  left: 130px;
+  top: -18px;
+  display: inline;
+}
+.uberSeatingLogo {
   background-image: url("/Media/passengericon.png");
   background-repeat: no-repeat;
   position: relative;
@@ -240,15 +257,15 @@
   left: 125px;
   height: 30px;
 }
-.revvSeatingLogo{
+.revvSeatingLogo {
   background-image: url("/Media/passengericon.png");
   background-repeat: no-repeat;
   position: relative;
   top: -35px;
-  left: 125px;
+  left: 115px;
   height: 20px;
 }
-.suv{
+.suv {
   background-image: url("/Media/suv.png");
   background-repeat: no-repeat;
   position: relative;
@@ -256,11 +273,27 @@
   left: 5px;
   height: 50px;
 }
-.sedan{
+.sedan {
   background-image: url("/Media/sedan.png");
   background-repeat: no-repeat;
   position: relative;
   top: 5px;
   left: 5px;
   height: 50px;
+}
+.button {
+  background-color: rgba(255, 211, 45, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  color: black;
+  border-radius: 20px;
+  padding: 5px;
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 170px;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgb(255, 221, 98),
+    0 17px 50px 0 rgba(0, 0, 0, 0.085);
+  cursor: pointer;
 }

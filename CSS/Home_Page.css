@@ -67,7 +67,7 @@
   width: 30px;
   height: 30px;
 }
-.swap_img:hover{
+.swap_img:hover {
   cursor: pointer;
 }
 .toParent {
@@ -113,14 +113,15 @@
   overflow: hidden;
 }
 .sncParent {
-  width: 172px;
-  height: 40px;
+  width: 168px;
+  height: 36px;
   position: absolute;
   top: 477px;
   left: 95px;
   overflow: hidden;
+  border-radius: 75px;
 }
-.sncParent:hover{
+.sncParent:hover {
   cursor: pointer;
 }
 .sncContainer {
@@ -131,10 +132,7 @@
   top: 0px;
   left: 0px;
   border: 1px solid rgba(0, 0, 0, 1);
-  border-top-left-radius: 75px;
-  border-top-right-radius: 75px;
-  border-bottom-left-radius: 75px;
-  border-bottom-right-radius: 75px;
+  border-radius: 75px;
   overflow: hidden;
 }
 .sncLabel {
@@ -162,7 +160,7 @@
   left: 0px;
   overflow: hidden;
 }
-.loadingGif{
+.loadingGif {
   width: 95%;
   height: 95%;
 }

@@ -102,6 +102,11 @@
   left: 77px;
   overflow: hidden;
 }
+.font{
+  font-size: 12px;
+  font-family: Righteous;
+  font-weight: 50;
+}
 select{
   width: 200px;
   height: 19px;
