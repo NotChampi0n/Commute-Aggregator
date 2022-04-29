@@ -70,19 +70,30 @@ function getRevvCars() {
     }).then(function (response) {
         return response.json();
     }).then(function (text) {
-        console.log(text)
+        var quotes = text.quotes
         var keys = Object.keys(text.quotes);
         var key_name = keys[1]
-        var vehicles = text.quotes['', key_name].vehicles
+        // var Vehicles = text.quotes['', key_name].vehicles
 
-        console.log(vehicles.length)
-        for (i = 0; i < vehicles.length; i++) {
+        for (i = 1; i < keys.length; i++) {
+            console.log()
+            if (quotes[keys[i]].vehicles.length > 5) {
+                for (j = 0; j < quotes[keys[i]].vehicles.length; j++) {
+                    
+                    // console.log(quotes[keys[i]].vehicles[j].class)
+                    // console.log(quotes[keys[i]].vehicles[j].price)
+                    // console.log(quotes[keys[i]].vehicles[j].passengers)
+                    taxicode_list_class.push(quotes[keys[i]].vehicles[j].class) 
+                    taxicode_list_price.push(quotes[keys[i]].vehicles[j].price)
+                    taxicode_list_passengers.push(quotes[keys[i]].vehicles[j].passengers)
+                }
+            }
 
-            taxicode_list_class.push(vehicles[i].class)
-            taxicode_list_price.push(vehicles[i].price)
-            taxicode_list_passengers.push(vehicles[i].passengers)
-            console.log(vehicles[i].passengers)
         }
+
+
+        // console.log(vehicles.length)
+
 
         document.getElementById("revvPrice1").innerHTML = `₹${taxicode_list_price[0] * 2}`
         document.getElementById("revvPrice2").innerHTML = `₹${taxicode_list_price[1] * 3}`
@@ -106,4 +117,8 @@ function getRevvCars() {
 
     })
 
+}
+
+function test(){
+    
 }
