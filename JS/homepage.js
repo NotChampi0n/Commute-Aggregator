@@ -30,14 +30,6 @@ function submitLoginForm(){
   }
 }
 
-function takeInput() {
-  let input = document.createElement('input');
-  input.type = 'file';
-  input.accept = 'image/*'
-  let file = input.file;
-  input.click();
-}
-
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
