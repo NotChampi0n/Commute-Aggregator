@@ -46,20 +46,19 @@
 }
 .swapContainer {
   width: 50px;
-  height: 40px;
-  padding-top: 5px;
+  height: 45px;
   text-align: center;
   font-size: 30px;
   background: rgba(255, 211, 45, 1);
   position: relative;
-  border-radius: 60%;
+  border-radius: 100%;
 }
 /* .swapParent:hover{
   box-shadow: 0 12px 16px 0 rgb(255, 221, 98);
 } */
 .swap_img {
   position: relative;
-  top: 2px;
+  top: 7px;
   width: 30px;
   height: 30px;
 }
@@ -161,7 +160,8 @@
   left: 27px;
   border: 1px solid rgba(0, 0, 0, 1);
   overflow: hidden;
-  border: solid 8px rgba(255, 211, 45, 1);
+  border: solid 6px rgba(255, 211, 45, 1);
+  border-width: 6px 0px 6px 6px;
 }
 .apiContainer > .carLogo {
   position: relative;
@@ -172,13 +172,13 @@
 .apiContainer > .carItem {
   display: none;
 }
-.logoUber{
+.logoUber {
   background-image: url("/Media/UberLogo.png");
   background-repeat: no-repeat;
   width: 60px;
   height: 20px;
 }
-.logoOla{
+.logoOla {
   background-image: url("/Media/olaLogo.png");
   background-repeat: no-repeat;
   width: 60px;
@@ -199,12 +199,12 @@
   height: 50px;
 }
 .apiBtn {
-  width: 27px;
-  height: 36px;
+  width: 33px;
+  height: 45px;
   background: rgba(255, 255, 255, 1);
   position: absolute;
   top: 150px;
-  border: 8px solid rgba(255, 211, 45, 1);
+  border: 6px solid rgba(255, 211, 45, 1);
   border-right: none;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -245,14 +245,14 @@
   font-size: 10px;
   position: relative;
   left: 10px;
-  top: 15px;
+  top: 22px;
   display: flex;
 }
 .seatingText {
   font-size: 12px;
   position: relative;
   left: 140px;
-  top: -18px;
+  top: -54px;
   display: inline;
 }
 .olaSeatingText {
@@ -266,7 +266,7 @@
   background-image: url("/Media/passengericon.png");
   background-repeat: no-repeat;
   position: relative;
-  top: -35px;
+  top: -70px;
   left: 125px;
   height: 30px;
 }
@@ -274,8 +274,8 @@
   background-image: url("/Media/passengericon.png");
   background-repeat: no-repeat;
   position: relative;
-  top: -35px;
-  left: 115px;
+  top: -30px;
+  left: 125px;
   height: 20px;
 }
 .suv {
@@ -294,7 +294,7 @@
   left: 5px;
   height: 50px;
 }
-.button {
+.bkNowBtn {
   background-color: rgba(255, 211, 45, 1);
   border: 1px solid rgba(0, 0, 0, 1);
   color: black;
@@ -304,9 +304,82 @@
   position: absolute;
   top: 15px;
   left: 170px;
+  font-size: 15px;
+  font-family: Righteous;
+  font-weight: Regular;
+}
+.bkNowBtn:hover {
+  box-shadow: 0 12px 16px 0 rgb(255, 221, 98),
+    0 17px 50px 0 rgba(0, 0, 0, 0.085);
+  cursor: pointer;
+}
+.box {
+  position: relative;
+  display: flex;
+  top: -45px;
+  left: 170px;
+  border-radius: 60px;
+  text-align: center;
+}
+.button {
+  font-size: 1em;
+  padding: 5px;
+  color: black;
+  border: 1px solid black;
+  background-color: rgba(255, 211, 45, 1);
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
 }
 .button:hover {
   box-shadow: 0 12px 16px 0 rgb(255, 221, 98),
     0 17px 50px 0 rgba(0, 0, 0, 0.085);
   cursor: pointer;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06d85f;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
 }
