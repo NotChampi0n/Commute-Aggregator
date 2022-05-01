@@ -18,18 +18,6 @@ function checkField() {
   }
 }
 
-function submitLoginForm(){
-  var email, pwd;
-  email = document.getElementById('email').value;
-  pwd = document.getElementById('password').value;
-  if(email == "" || pwd == ""){
-    alert('Please enter Email or Password')
-  }
-  else{
-    document.getElementById("login").submit();
-  }
-}
-
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
