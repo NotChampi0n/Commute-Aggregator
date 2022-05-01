@@ -11,8 +11,8 @@
   <body>
 
     <form id="login" name="login" action="/PHP/login.php" method="POST">
-
       <div class="parent">
+        
         <div class="navbarParent">
           <div class="navbarContainer"></div>
           <span class="comAgg" onclick="location.href='/index.html'">Commute Aggregator</span>
@@ -39,7 +39,7 @@
           <div class="emailContainer"></div>
           <span class="emailLabel">Email ID</span>
           <div class="emailInput">
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
           </div>
         </div>
   
@@ -47,7 +47,7 @@
           <div class="passwordContainer"></div>
           <span class="passwordLabel">Password</span>
           <div class="passwordInput">
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password" required>
           </div>
         </div>
   
