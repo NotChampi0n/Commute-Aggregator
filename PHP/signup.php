@@ -28,5 +28,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
     }
     mysqli_close($con);
+
+    $to_email=$email;
+    $subject="Welcome to Commute Family :)";
+    $body="Hello $name, thank you for signing up with Commute Aggregator. We look forward to having you book rides with us. 
+    
+    Your credentials for login are as follows:
+    Email ID: $email
+    Password: $pwd
+    
+    Keep commuting safely :)";
+    $from_email="From: co2019.khushboo.rathod@ves.ac.in";
+    if(mail($to_email, $subject, $body, $from_email)){
+    }
+    else{
+        echo "<script>alert('Sorry, failed while sending mail!!')</script>";
+    }
 }
 ?>

@@ -20,5 +20,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         header("Location:https://commuteagg.000webhostapp.com/HTML/Complaint_Page.html");
     }
     mysqli_close($con);
+
+    $to_email=$email;
+    $subject="Thanks for reaching out :)";
+    $body="Hello $name, thank you for reaching out to us. Our executive will look into it closely and get back to you as soon as possible. 
+
+    
+    Keep commuting safely :) 
+    
+
+    Thanks and Regards, 
+    Commute Aggregator";
+    $from_email="From: co2019.khushboo.rathod@ves.ac.in";
+    if(mail($to_email, $subject, $body, $from_email)){
+    }
+    else{
+        echo "<script>alert('Sorry, failed while sending mail!!')</script>";
+    }
 }
 ?>
