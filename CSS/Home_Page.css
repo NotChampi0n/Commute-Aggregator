@@ -1,6 +1,14 @@
 /* * {
   box-sizing: border-box;
 } */
+html {
+  height: 100vh;
+}
+body {
+  min-height: 100vh;
+  max-height: 100vh;
+  margin: 0px;
+}
 .fromParent {
   width: 285px;
   height: 30px;
