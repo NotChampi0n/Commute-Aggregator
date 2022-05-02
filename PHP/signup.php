@@ -20,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $stmt->bind_param("ssss",$name,$email,$phno,$pwd);
             $result=$stmt->execute();
             if($result){
-                header("Location:https://commuteagg.000webhostapp.com/HTML/Login.html");
+                header("Location:https://commuteagg.000webhostapp.com/index.html");
                 $to_email=$email;
                 $subject="Welcome to Commute Family :)";
                 $body="Hello $name, thank you for signing up with Commute Aggregator. We look forward to having you book rides with us. 

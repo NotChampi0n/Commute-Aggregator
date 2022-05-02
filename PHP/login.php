@@ -11,10 +11,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $stmt->execute();
     $result=$stmt->get_result();
     if($result->num_rows==1){
-        header("Location:https://commuteagg.000webhostapp.com/index.html");
+        header("Location:https://commuteagg.000webhostapp.com/HTML/Homepage.html");
     }
     else{
-        header("Location:https://commuteagg.000webhostapp.com/HTML/Login.html");
+        echo "<script>alert('Please enter correct details!')</script>";
     }
     mysqli_close($con);
 }

@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $result=$stmt->execute();
     if($result)
     {
-        header("Location:https://commuteagg.000webhostapp.com/index.html");
+        header("Location:https://commuteagg.000webhostapp.com/HTML/Homepage.html");
     }
     else
     {
