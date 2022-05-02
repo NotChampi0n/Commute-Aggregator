@@ -14,7 +14,7 @@ body {
   height: 30px;
   position: absolute;
   top: 167px;
-  left: 37px;
+  margin-left: 35%;
   overflow: hidden;
 }
 .fromContainer {
@@ -56,7 +56,7 @@ body {
   height: 50px;
   position: absolute;
   top: 250px;
-  left: 154px;
+  margin-left: 47%;
   overflow: hidden;
 }
 .swapContainer {
@@ -82,7 +82,7 @@ body {
   height: 30px;
   position: absolute;
   top: 352px;
-  left: 37px;
+  margin-left: 35%;
   overflow: hidden;
 }
 .toContainer {
@@ -124,7 +124,7 @@ body {
   height: 36px;
   position: absolute;
   top: 477px;
-  left: 95px;
+  margin-left: 42%;
   overflow: hidden;
   border-radius: 75px;
 }
@@ -157,7 +157,7 @@ body {
   height: 100px;
   position: absolute;
   top: 649px;
-  left: 85px;
+  margin-left: 40%;
   overflow: hidden;
 }
 .loadingGifContainer {

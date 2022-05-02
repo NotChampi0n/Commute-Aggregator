@@ -12,8 +12,8 @@ body {
 }
 .navbarParent {
   width: 100%;
-  height: 200px;
-  position: sticky;
+  height: 10%;
+  position: relative;
   overflow: hidden;
 }
 .black_left_border {
@@ -24,7 +24,7 @@ body {
 }
 .navbarContainer {
   width: 100%;
-  height: 48px;
+  height: 30%;
   background: rgba(255, 211, 45, 1);
   position: relative;
   border: 1px solid rgba(0, 0, 0, 1);
@@ -35,7 +35,7 @@ body {
   height: 50px;
   position: absolute;
   top: 6px;
-  left: 25%;
+  left: 9px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
@@ -50,6 +50,7 @@ body {
   top: 0px;
   left: 120px;
   padding-right: 10px;
+  margin-left: 50%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
@@ -107,6 +108,7 @@ body {
   position: absolute;
   top: 0px;
   left: 215px;
+  margin-left: 55%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
@@ -118,7 +120,7 @@ body {
   height: 48px;
   position: absolute;
   top: 0px;
-  left: 300px;
+  margin-left: 90%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
