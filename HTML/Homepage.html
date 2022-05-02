@@ -10,6 +10,7 @@
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOAKTMVoHS5qFNZ5M3QD0_60F9BfTS_I0&libraries=places"> -->
   <!-- </script> -->
+
 </head>
 
 <body>
@@ -64,7 +65,7 @@
 
 
 
-      <div class="sncParent" onclick="checkField()">
+      <div class="sncParent" onclick="checkField();set()">
         <div class="sncContainer"></div>
         <span class="sncLabel">Search and Compare</span>
       </div>
@@ -82,12 +83,21 @@
   <!-- <script type="text/javascript">
     $(document).ready(function(){
       var autocomplete;
-      
+
       automcomplete = new google.maps.places.Autocomplete((document.getElementById("from")),{
         types:['geocode']
       })
     })
   </script> -->
 </body>
+<script>
+  function set() {
+
+    var from = document.getElementById("from").value;
+    localStorage.setItem('fromLoc', from);
+    var to = document.getElementById("to").value;
+    localStorage.setItem('toLoc', to);
+  }
+</script>
 
 </html>

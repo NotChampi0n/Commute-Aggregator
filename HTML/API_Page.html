@@ -10,7 +10,7 @@
   <script src="/JS/api_responsive.js"></script>
 </head>
 
-<body onload="getUberCars();getRevvCars()">
+<body onload="get();getUberCars();getRevvCars()">
 
   <div id="liveAlertPlaceholder"></div>
   <div class="parent">
@@ -21,10 +21,10 @@
         <div class="dropdown">
           <button onclick="myFunction()" class="dropbtn"
             ondblclick="location.href='/HTML/API_Page.html'">Platforms</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="https://m.uber.com/looking" target="_blank">Uber</a>
-              <a href="https://www.ola.cars/looking" target="_blank">Ola</a>
-            </div>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="https://m.uber.com/looking" target="_blank">Uber</a>
+            <a href="https://www.ola.cars/looking" target="_blank">Ola</a>
+          </div>
         </div>
       </div>
       <span class="contactUs black_left_border" onclick="location.href='/HTML/Complaint_Page.html'">Contact Us</span>
@@ -186,6 +186,13 @@
     </div>
   </div>
 </body>
-
+<script>
+  function get() {
+    var from = localStorage.getItem('fromLoc');
+    document.getElementById("from").value = from
+    var to = localStorage.getItem('toLoc');
+    document.getElementById("to").value = to
+  }
+</script>
 
 </html>
