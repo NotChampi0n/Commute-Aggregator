@@ -158,8 +158,9 @@ body {
   width: 60%;
   height: 20%;
   position: relative;
-  top: 45%;
+  top: 40%;
   margin-left: 20%;
+  overflow: hidden;
 }
 .loadingGifContainer {
   width: 200px;
