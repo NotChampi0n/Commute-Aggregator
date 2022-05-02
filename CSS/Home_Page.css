@@ -11,11 +11,11 @@ body {
 }
 .fromParent {
   box-sizing: border-box;
-  width: 70%;
-  height: 3%;
+  width: 90%;
+  height: 10%;
   position: relative;
   top: 1%;
-  margin-left: 15%;
+  margin-left: 5%;
   /* overflow: hidden; */
 }
 .fromContainer {
@@ -23,25 +23,28 @@ body {
   height: 100%;
   background: rgba(255, 211, 45, 1);
   position: relative;
-  border: 1px solid rgba(0, 0, 0, 1);
   overflow: hidden;
 }
 .fromLabel {
+  font-size: 40px;
+  font-family: Righteous;
+  font-weight: Regular;
   width: 35px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 5px;
-  left: 6px;
+  top: 35%;
+  left: 3%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
 .fromInput {
-  width: 90%;
+  width: 80%;
   height: 80%;
+  margin: 2%;
   background: rgba(255, 255, 255, 1);
   position: absolute;
-  top: 5px;
-  left: 51px;
+  top: 1%;
+  left: 15%;
   overflow: hidden;
 }
 .From_GPS {
