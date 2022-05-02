@@ -237,11 +237,18 @@
 }
 .olaCarInfo {
   position: relative;
-  left: 115px;
+  left: 120px;
   top: 18px;
   display: block;
 }
-.rideSmallText {
+.uberRideSmallText {
+  font-size: 10px;
+  position: relative;
+  left: 10px;
+  top: 15px;
+  display: flex;
+}
+.olaRideSmallText {
   font-size: 10px;
   position: relative;
   left: 10px;
@@ -253,12 +260,12 @@
   position: relative;
   left: 140px;
   top: -18px;
-  display: inline;
+  display: block;
 }
 .olaSeatingText {
   font-size: 12px;
   position: relative;
-  left: 130px;
+  left: 140px;
   top: -18px;
   display: inline;
 }
@@ -266,7 +273,7 @@
   background-image: url("/Media/passengericon.png");
   background-repeat: no-repeat;
   position: relative;
-  top: -35px;
+  top: -45px;
   left: 125px;
   height: 30px;
 }
@@ -275,7 +282,7 @@
   background-repeat: no-repeat;
   position: relative;
   top: -35px;
-  left: 115px;
+  left: 125px;
   height: 20px;
 }
 .suv {
