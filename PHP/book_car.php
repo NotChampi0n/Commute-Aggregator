@@ -67,9 +67,16 @@ $time = generateEstimatedTime();
 $from = $_POST['from'];
 $to = $_POST['to'];
 
+$conn = mysqli_connect("localhost","id18850211_commute_login","Khushboo(2004)","id18850211_login");
+
 $to_email = $_COOKIE['email'];
+$select = "select name from login where email='$to_email'";
+$run = mysqli_query($conn, $select);
+$username = mysqli_fetch_array($run);
+$name = $username['name'];
+
 $subject="Your ride is booked!";
-$body="Hello user, thank you for booking your ride with Commute Aggregator.  
+$body="Hello $name, thank you for booking your ride with Commute Aggregator.  
                 
 Please find your ride details below:
 Pickup Location - $from
@@ -92,7 +99,6 @@ $from_email="From: co2019.khushboo.rathod@ves.ac.in";
 
 echo "<script>alert('A confirmation mail is sent to your registered email id, Thank you!')</script>";
 
-$conn = mysqli_connect("localhost","id18850211_commute_login","Khushboo(2004)","id18850211_login");
 $query = "update login set from_location='$from', to_location='$to' where email='$to_email'";
 $run = mysqli_query($conn, $query);
 ?>
