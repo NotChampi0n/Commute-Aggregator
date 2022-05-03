@@ -134,31 +134,31 @@ body {
   text-align: center;
 }
 .apiBox {
-  width: 100%;
-  height: 50%;
-  position: relative;
-  top: 20%;
+  width: 360px;
+  height: 469px;
+  position: absolute;
+  top:1000px;
   left: 0px;
   overflow: hidden;
 }
 .apiParent {
-  width: 90%;
-  height: 99%;
+  width: 88px;
+  height: 469px;
   position: absolute;
   top: 0px;
   overflow: hidden;
 }
 #uberApiParent {
-  left: 0px;
+  left: 212px;
 }
 #revvApiParent {
-  left: 450px;
+  left: 272px;
 }
 .apiContainer {
-  width: 100%;
-  height: 100%;
+  width: 61px;
+  height: 469px;
   background: rgba(255, 255, 255, 1);
-  position: relative;
+  position: absolute;
   left: 27px;
   border: 1px solid rgba(0, 0, 0, 1);
   overflow: hidden;
