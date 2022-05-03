@@ -74,9 +74,6 @@ body {
   width: 70%;
   height: 70%;
 }
-.swap_img:hover {
-  cursor: pointer;
-}
 .toParent {
   box-sizing: border-box;
   width: 90%;
@@ -94,8 +91,6 @@ body {
 }
 .toLabel {
   font-size: 40px;
-  font-family: Righteous;
-  font-weight: Regular;
   width: 35px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
