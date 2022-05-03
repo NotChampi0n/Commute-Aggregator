@@ -12,6 +12,13 @@ function generateEstimatedTime($length = 1)
     return $time;
 }
 
+function generateName($length = 1){
+    $names = array("Nazir Hoosein", "Jairaj Patel", "Rahul Gupta", "Shiv Sharma", "Madhav Varma", "Jagdish Singh","Hitesh Gill", "Yusuf Khan", "Babu Patil", "Nitish Thakur");
+    $name = array_rand($names, 1);
+    // echo $names[$name];
+    return $names[$name];
+}
+
 function generatePhoneNumber($length = 10)
 {
     $characters = '0123456789';
@@ -66,6 +73,7 @@ $phone = generatePhoneNumber();
 $time = generateEstimatedTime();
 $from = $_POST['from'];
 $to = $_POST['to'];
+$driver = generateName();
 
 $conn = mysqli_connect("localhost","id18850211_commute_login","Khushboo(2004)","id18850211_login");
 
@@ -84,7 +92,7 @@ Drop Location - $to
 Estimated cost - 
 Vehicle - 
 Vehicle Number - $carNumber
-Driver Name - 
+Driver Name - $driver
 Drive Contact - $phone
 Arrival Time - $time Minutes
 OTP - $otp
