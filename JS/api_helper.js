@@ -70,26 +70,29 @@ function getRevvCars() {
     }).then(function (response) {
         return response.json();
     }).then(function (text) {
+        
         var quotes = text.quotes
         var keys = Object.keys(text.quotes);
         var key_name = keys[1]
-        // var Vehicles = text.quotes['', key_name].vehicles
-
-        for (i = 1; i < keys.length; i++) {
-            console.log()
+        
+        console.log(quotes[keys[0]].vehicles.length)
+        console.log(keys.length)
+        for (i = 0; i < keys.length; i++) {
             if (quotes[keys[i]].vehicles.length > 5) {
                 for (j = 0; j < quotes[keys[i]].vehicles.length; j++) {
-                    
-                    // console.log(quotes[keys[i]].vehicles[j].class)
-                    // console.log(quotes[keys[i]].vehicles[j].price)
-                    // console.log(quotes[keys[i]].vehicles[j].passengers)
-                    taxicode_list_class.push(quotes[keys[i]].vehicles[j].class) 
+
+                    taxicode_list_class.push(quotes[keys[i]].vehicles[j].class)
                     taxicode_list_price.push(quotes[keys[i]].vehicles[j].price)
                     taxicode_list_passengers.push(quotes[keys[i]].vehicles[j].passengers)
+
+                    console.log(taxicode_list_class)
+                    console.log(taxicode_list_passengers)
+                    console.log(taxicode_list_price)
                 }
             }
-
         }
+
+
 
 
         // console.log(vehicles.length)
@@ -119,6 +122,6 @@ function getRevvCars() {
 
 }
 
-function test(){
-    
+function test() {
+
 }
