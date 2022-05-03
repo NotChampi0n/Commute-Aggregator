@@ -78,10 +78,14 @@ $driver = generateName();
 $conn = mysqli_connect("localhost","id18850211_commute_login","Khushboo(2004)","id18850211_login");
 
 $to_email = $_COOKIE['email'];
-$select = "select name from login where email='$to_email'";
-$run = mysqli_query($conn, $select);
-$username = mysqli_fetch_array($run);
+$select1 = "select name from login where email='$to_email'";
+$select2 = "select phone_number from login where email='$to_email'";
+$run1 = mysqli_query($conn, $select1);
+$run2 = mysqli_query($conn, $select2);
+$username = mysqli_fetch_array($run1);
+$mobno = mysqli_fetch_array($run2);
 $name = $username['name'];
+$user_phone = $mobno['phone_number'];
 
 $subject="Your ride is booked!";
 $body="Hello $name, thank you for booking your ride with Commute Aggregator.  
@@ -107,6 +111,6 @@ $from_email="From: co2019.khushboo.rathod@ves.ac.in";
 
 echo "<script>alert('A confirmation mail is sent to your registered email id, Thank you!')</script>";
 
-$query = "update login set from_location='$from', to_location='$to' where email='$to_email'";
+$query = "insert into booking_details(name, email, phone_number, from_location, to_location, vehicle_number) values ('$name', '$to_email', '$user_phone', '$from', '$to', '$carNumber')";
 $run = mysqli_query($conn, $query);
 ?>
