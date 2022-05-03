@@ -18,6 +18,21 @@ function checkField() {
   }
 }
 
+// From - To getter setter
+function set() {
+
+  var from = document.getElementById("from").value;
+  localStorage.setItem('fromLoc', from);
+  var to = document.getElementById("to").value;
+  localStorage.setItem('toLoc', to);
+}
+function get() {
+  var from = localStorage.getItem('fromLoc');
+  document.getElementById("from").value = from
+  var to = localStorage.getItem('toLoc');
+  document.getElementById("to").value = to
+}
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
