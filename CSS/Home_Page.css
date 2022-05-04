@@ -117,7 +117,7 @@ body {
 .sncParent {
   width: 50%;
   height: 10%;
-  position: relative;
+  position: absolute;
   top: 45%;
   margin-left: 25%;
 }
@@ -146,8 +146,8 @@ body {
 .loadingGifParent {
   width: 60%;
   height: 20%;
-  position: relative;
-  top: 42%;
+  position: absolute;
+  top: 55%;
   margin-left: 20%;
   overflow: hidden;
 }
