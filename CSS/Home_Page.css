@@ -68,7 +68,7 @@ body {
   border-radius: 50%;
 }
 .swap_img {
-  position: relative;
+  position: absolute;
   top: 15%;
   left: 15%;
   width: 100px;
