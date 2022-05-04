@@ -13,7 +13,7 @@ body {
   width: 90%;
   height: 5%;
   position: absolute;
-  top: 5%;
+  top: 15%;
   margin-left: 5%;
 }
 .fromContainer {
@@ -79,7 +79,7 @@ body {
   width: 90%;
   height: 5%;
   position: absolute;
-  top: 25%;
+  margin-top: 35%;
   margin-left: 5%;
 }
 .toContainer {
@@ -154,14 +154,14 @@ body {
   overflow: hidden;
 }
 .loadingGifContainer {
-  width: 200px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
   overflow: hidden;
 }
 .loadingGif {
-  width: 95%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
 }
