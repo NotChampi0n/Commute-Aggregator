@@ -118,7 +118,7 @@ body {
   width: 50%;
   height: 10%;
   position: absolute;
-  top: 45%;
+  top: 800px;
   margin-left: 25%;
 }
 .sncParent:hover {
@@ -147,7 +147,7 @@ body {
   width: 60%;
   height: 20%;
   position: absolute;
-  top: 55%;
+  top: 1000px;
   margin-left: 20%;
   overflow: hidden;
 }
