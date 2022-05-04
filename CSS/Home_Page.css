@@ -74,9 +74,8 @@ body {
   height: 100px;
 }
 .toParent {
-  box-sizing: border-box;
   width: 90%;
-  height: 5%;
+  height: 85px;
   position: absolute;
   margin-top: 35%;
   margin-left: 5%;
@@ -85,7 +84,7 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(255, 211, 45, 1);
-  position: relative;
+  position: absolute;
   overflow: hidden;
 }
 .toLabel {
@@ -103,7 +102,7 @@ body {
   height: 60%;
   margin: 2%;
   background: rgba(255, 255, 255, 1);
-  position: relative;
+  position: absolute;
   left: 10%;
   overflow: hidden;
 }
