@@ -12,15 +12,15 @@ body {
 .fromParent {
   width: 90%;
   height: 85px;
-  position: absolute;
+  position: fixed;
   top: 15%;
   margin-left: 5%;
 }
 .fromContainer {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 85px;
   background: rgba(255, 211, 45, 1);
-  position: absolute;
+  position: fixed;
   overflow: hidden;
 }
 .fromLabel {
