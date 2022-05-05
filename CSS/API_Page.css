@@ -167,6 +167,7 @@ body {
 .apiContainer > .carLogo {
   position: relative;
   top: 50px;
+  right: 10px;
   transform: rotate(90deg);
   display: block;
 }
