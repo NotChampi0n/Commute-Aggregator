@@ -99,7 +99,7 @@ function getOlaCars() {
         document.getElementById("olaPrice2").innerHTML = `₹${taxicode_list_price[1] * 3}`
         document.getElementById("olaPrice3").innerHTML = `₹${taxicode_list_price[8] * 4}`
         document.getElementById("olaPrice4").innerHTML = `₹${taxicode_list_price[9] * 5}`
-        document.getElementById("olaPrice5").innerHTML = `₹${taxicode_list_price[10] * 7}`
+        document.getElementById("olaPrice5").innerHTML = `₹${taxicode_list_price[10] * 8}`
 
         document.getElementById("olaModel1").innerHTML = taxicode_list_class[0]
         document.getElementById("olaModel2").innerHTML = taxicode_list_class[1]
