@@ -92,9 +92,7 @@ $body="Hello $name, thank you for booking your ride with Commute Aggregator.
                 
 Please find your ride details below:
 Pickup Location - $from
-Drop Location - $to
-Estimated cost - 
-Vehicle - 
+Drop Location - $to 
 Vehicle Number - $carNumber
 Driver Name - $driver
 Drive Contact - $phone
