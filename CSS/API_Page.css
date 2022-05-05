@@ -177,14 +177,14 @@ body {
 .logoUber {
   background-image: url("/Media/UberLogo.png");
   background-repeat: no-repeat;
-  width: 120px;
-  height: 100px;
+  width: 260px;
+  height: 90px;
 }
 .logoOla {
   background-image: url("/Media/olaLogo.png");
   background-repeat: no-repeat;
-  width: 60px;
-  height: 20px;
+  width: 324px;
+  height: 100px;
 }
 .uberUList {
   position: absolute;
@@ -364,13 +364,14 @@ body {
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  width: 50%;
-  height: 10%;
+  width: 60%;
+  height: 11%;
   position: relative;
-  transition: all 5s ease-in-out;
+  /* transition: all 5s ease-in-out; */
 }
 .content{
-  font-size: 20px;
+  padding-top: 10px;
+  font-size: 25px;
   color: #333;
 }
 .box a{
