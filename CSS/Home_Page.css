@@ -2,11 +2,11 @@
   box-sizing: border-box;
 } */
 html {
-  height: 1742px;
+  height: 100vh;
 }
 body {
-  min-height: 1742px;
-  max-height: 1742px;
+  min-height: 100vh;
+  max-height: 100vh;
   margin: 0px;
 }
 .fromParent {

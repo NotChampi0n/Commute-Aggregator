@@ -134,32 +134,31 @@ body {
   text-align: center;
 }
 .apiBox {
-  width: 360px;
-  height: 469px;
+  width: 100vw;
+  height: 50vh;
   position: absolute;
-  top:1000px;
-  left: 0px;
+  bottom: 0vh;
   overflow: hidden;
 }
 .apiParent {
-  width: 88px;
-  height: 469px;
+  width: 200px;
+  height: 100%;
   position: absolute;
   top: 0px;
   overflow: hidden;
 }
 #uberApiParent {
-  left: 212px;
+  right: 155px;
 }
-#revvApiParent {
-  left: 272px;
+#olaApiParent {
+  right: 0px;
 }
 .apiContainer {
-  width: 61px;
-  height: 469px;
+  width: 85%;
+  height: 100%;
   background: rgba(255, 255, 255, 1);
   position: absolute;
-  left: 27px;
+  left: 43px;
   border: 1px solid rgba(0, 0, 0, 1);
   overflow: hidden;
   border: solid 6px rgba(255, 211, 45, 1);
@@ -177,8 +176,8 @@ body {
 .logoUber {
   background-image: url("/Media/UberLogo.png");
   background-repeat: no-repeat;
-  width: 60px;
-  height: 20px;
+  width: 120px;
+  height: 100px;
 }
 .logoOla {
   background-image: url("/Media/olaLogo.png");
@@ -193,7 +192,7 @@ body {
   width: 50px;
   height: 50px;
 }
-.revvUList {
+.olaUList {
   position: absolute;
   top: 175px;
   left: 75px;
@@ -201,8 +200,8 @@ body {
   height: 50px;
 }
 .apiBtn {
-  width: 33px;
-  height: 45px;
+  width: 50px;
+  height: 65px;
   background: rgba(255, 255, 255, 1);
   position: absolute;
   top: 150px;
@@ -212,7 +211,7 @@ body {
   border-bottom-left-radius: 50px;
   overflow: hidden;
 }
-#revvApiBtn {
+#olaApiBtn {
   top: 200px;
 }
 .car1 {
@@ -272,7 +271,7 @@ body {
   left: 125px;
   height: 30px;
 }
-.revvSeatingLogo {
+.olaSeatingLogo {
   background-image: url("/Media/passengericon.png");
   background-repeat: no-repeat;
   position: relative;

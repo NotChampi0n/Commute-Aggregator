@@ -1,11 +1,11 @@
 var isOpenUber = false;
-var isOpenRevv = false;
+var isOpenOla = false;
 
 let uberParent;
 let uberContainer;
 
-let revvParent;
-let revvContainer;
+let olaParent;
+let olaContainer;
 
 document.addEventListener("DOMContentLoaded", setIds);
 
@@ -14,19 +14,40 @@ function setIds(){
     uberContainer = document.getElementById("uberApiContainer");
     uberLogo = document.getElementById("uberLogo");
 
-    revvParent = document.getElementById("revvApiParent");
-    revvContainer = document.getElementById("revvApiContainer");
-    revvLogo = document.getElementById("revvLogo");
+    olaParent = document.getElementById("olaApiParent");
+    olaContainer = document.getElementById("olaApiContainer");
+    olaLogo = document.getElementById("olaLogo");
 }
 
 function stretchUberApi(){    
     console.log(isOpenUber)
-    if(isOpenUber){
-        
+    if(isOpenOla && isOpenUber){
+        isOpenUber = true
+        uberParent.style.removeProperty("left");
+        uberParent.style.width="835px";
+        uberContainer.style.width="780px";
+        uberParent.style.right="145px";
+        uberContainer.style.display="grid";
+        Array.from(document.getElementsByClassName("uberItem")).forEach(elem => {
+            elem.style.display = "block";
+        });
+        uberLogo.style.display = "none";
+        isOpenOla = false
+        olaParent.style.width="200px";
+        olaContainer.style.width="85%";
+        olaParent.style.right="0px";
+        olaContainer.style.display="block";
+        Array.from(document.getElementsByClassName("olaItem")).forEach(elem => {
+            elem.style.display = "none";
+        });
+        olaLogo.style.display = "block";
+    }
+    else if(isOpenUber){
         isOpenUber = false
-        uberParent.style.width="88px";
-        uberContainer.style.width="61px";
-        uberParent.style.left="212px";
+        uberParent.style.removeProperty("left");
+        uberParent.style.width="200px";
+        uberContainer.style.width="85%";
+        uberParent.style.right="155px";
         uberContainer.style.display="block";
         Array.from(document.getElementsByClassName("uberItem")).forEach(elem => {
             elem.style.display = "none";
@@ -36,53 +57,56 @@ function stretchUberApi(){
     }
     else{
         isOpenUber = true
-        uberParent.style.width="300px";
-        uberContainer.style.width="272px";
-        uberParent.style.left="0px";
+        uberParent.style.removeProperty("left");
+        uberParent.style.width="835px";
+        uberContainer.style.width="780px";
+        uberParent.style.right="145px";
         uberContainer.style.display="grid";
         Array.from(document.getElementsByClassName("uberItem")).forEach(elem => {
             elem.style.display = "block";
         });
         uberLogo.style.display = "none";
 
-        if(isOpenRevv){
-            isOpenRevv = false
-            revvParent.style.width="88px";
-            revvContainer.style.width="61px";
-            revvParent.style.left="272px";
-            revvContainer.style.display="block";
-            Array.from(document.getElementsByClassName("revvItem")).forEach(elem => {
+        if(isOpenOla){
+            isOpenOla = false
+            olaParent.style.width="200px";
+            olaContainer.style.width="85%";
+            olaParent.style.right="0px";
+            olaContainer.style.display="block";
+            Array.from(document.getElementsByClassName("olaItem")).forEach(elem => {
                 elem.style.display = "none";
             });
-            revvLogo.style.display = "block";
+            olaLogo.style.display = "block";
         }
     }
 }
 
-function stretchRevvApi(){    
-    console.log(isOpenRevv)
-    if(isOpenRevv){
-        isOpenRevv = false
-        revvParent.style.width="88px";
-        revvContainer.style.width="61px";
-        revvParent.style.left="272px";
-        revvContainer.style.display="block";
-        Array.from(document.getElementsByClassName("revvItem")).forEach(elem => {
+function stretchOlaApi(){    
+    console.log(isOpenOla)
+    if(isOpenOla){
+        isOpenOla = false
+        olaParent.style.width="200px";
+        olaContainer.style.width="85%";
+        olaParent.style.right="0px";
+        olaContainer.style.display="block";
+        Array.from(document.getElementsByClassName("olaItem")).forEach(elem => {
             elem.style.display = "none";
         });
-        revvLogo.style.display = "block";
+        olaLogo.style.display = "block";
 
         if(!isOpenUber){
-            uberParent.style.width="88px";
-            uberContainer.style.width="61px";
-            uberParent.style.left="212px";
+            uberParent.style.removeProperty("left");
+            uberParent.style.width="200px";
+            uberContainer.style.width="85%";
+            uberParent.style.right="145px";
             uberContainer.style.display="block";
         }
         if(isOpenUber){
             isOpenUber = true
-            uberParent.style.width="300px";
-            uberContainer.style.width="272px";
-            uberParent.style.left="0px";
+            uberParent.style.removeProperty("left");
+            uberParent.style.width="835px";
+            uberContainer.style.width="780px";
+            uberParent.style.right="145px";
             uberContainer.style.display="grid";
             Array.from(document.getElementsByClassName("uberItem")).forEach(elem => {
                 elem.style.display = "block";
@@ -91,15 +115,15 @@ function stretchRevvApi(){
         }
     }
     else{
-        isOpenRevv = true
-        revvParent.style.width="300px";
-        revvContainer.style.width="272px";
-        revvParent.style.left="61px";
-        revvContainer.style.display="grid";
-        Array.from(document.getElementsByClassName("revvItem")).forEach(elem => {
+        isOpenOla = true
+        olaParent.style.width="835px";
+        olaContainer.style.width="780px";
+        olaParent.style.right="0px";
+        olaContainer.style.display="grid";
+        Array.from(document.getElementsByClassName("olaItem")).forEach(elem => {
             elem.style.display = "block";
         });
-        revvLogo.style.display = "none";
+        olaLogo.style.display = "none";
         if(!isOpenUber){
             uberParent.style.left = "0px";
             Array.from(document.getElementsByClassName("uberItem")).forEach(elem => {
@@ -108,9 +132,9 @@ function stretchRevvApi(){
             uberLogo.style.display = "block";
         }
         if(isOpenUber){   
-            console.log("hello");
+            uberParent.style.removeProperty("left");
             uberContainer.style.display="block"
-            uberContainer.style.width="61px";
+            uberContainer.style.width="85%";
             Array.from(document.getElementsByClassName("uberItem")).forEach(elem => {
                 elem.style.display = "none";
             });

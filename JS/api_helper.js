@@ -51,8 +51,8 @@ function getUberCars() {
 
 }
 
-function getRevvCars() {
-    console.log("Revv called")
+function getOlaCars() {
+    console.log("Ola called")
     const date = new Date();
     date.setHours(date.getHours() + 1)
     const unixDate = Math.floor(date.getTime() / 1000)
@@ -95,23 +95,23 @@ function getRevvCars() {
         // console.log(vehicles.length)
 
 
-        document.getElementById("revvPrice1").innerHTML = `₹${taxicode_list_price[0] * 2}`
-        document.getElementById("revvPrice2").innerHTML = `₹${taxicode_list_price[1] * 3}`
-        document.getElementById("revvPrice3").innerHTML = `₹${taxicode_list_price[8] * 4}`
-        document.getElementById("revvPrice4").innerHTML = `₹${taxicode_list_price[9] * 5}`
-        document.getElementById("revvPrice5").innerHTML = `₹${taxicode_list_price[10] * 7}`
+        document.getElementById("olaPrice1").innerHTML = `₹${taxicode_list_price[0] * 2}`
+        document.getElementById("olaPrice2").innerHTML = `₹${taxicode_list_price[1] * 3}`
+        document.getElementById("olaPrice3").innerHTML = `₹${taxicode_list_price[8] * 4}`
+        document.getElementById("olaPrice4").innerHTML = `₹${taxicode_list_price[9] * 5}`
+        document.getElementById("olaPrice5").innerHTML = `₹${taxicode_list_price[10] * 7}`
 
-        document.getElementById("revvModel1").innerHTML = taxicode_list_class[0]
-        document.getElementById("revvModel2").innerHTML = taxicode_list_class[1]
-        document.getElementById("revvModel3").innerHTML = taxicode_list_class[8]
-        document.getElementById("revvModel4").innerHTML = taxicode_list_class[9]
-        document.getElementById("revvModel5").innerHTML = taxicode_list_class[10]
+        document.getElementById("olaModel1").innerHTML = taxicode_list_class[0]
+        document.getElementById("olaModel2").innerHTML = taxicode_list_class[1]
+        document.getElementById("olaModel3").innerHTML = taxicode_list_class[8]
+        document.getElementById("olaModel4").innerHTML = taxicode_list_class[9]
+        document.getElementById("olaModel5").innerHTML = taxicode_list_class[10]
 
-        document.getElementById("revvSeat1").innerHTML = taxicode_list_passengers[0]
-        document.getElementById("revvSeat2").innerHTML = taxicode_list_passengers[1]
-        document.getElementById("revvSeat3").innerHTML = taxicode_list_passengers[8]
-        document.getElementById("revvSeat4").innerHTML = taxicode_list_passengers[3]
-        document.getElementById("revvSeat5").innerHTML = taxicode_list_passengers[6]
+        document.getElementById("olaSeat1").innerHTML = taxicode_list_passengers[0]
+        document.getElementById("olaSeat2").innerHTML = taxicode_list_passengers[1]
+        document.getElementById("olaSeat3").innerHTML = taxicode_list_passengers[8]
+        document.getElementById("olaSeat4").innerHTML = taxicode_list_passengers[3]
+        document.getElementById("olaSeat5").innerHTML = taxicode_list_passengers[6]
 
 
 
