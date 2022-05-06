@@ -112,7 +112,6 @@ body {
 }
 .searchParent:hover {
   cursor: pointer;
-  box-shadow: 0 6px 15px 0 rgb(255, 221, 1);
 }
 .searchContainer {
   width: 100%;
