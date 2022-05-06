@@ -76,7 +76,7 @@ function getOlaCars() {
         // var Vehicles = text.quotes['', key_name].vehicles
 
         for (i = 1; i < keys.length; i++) {
-            console.log()
+            console.log(text)
             if (quotes[keys[i]].vehicles.length > 5) {
                 for (j = 0; j < quotes[keys[i]].vehicles.length; j++) {
                     
