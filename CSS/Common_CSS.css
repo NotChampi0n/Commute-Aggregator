@@ -58,10 +58,11 @@ body {
 /* Dropdown Button */
 .dropbtn {
   height: 100%;
-  width: 25%;
-  /* position: block; */
-  margin-top: 0%;
-  margin-left: 40%;
+  width: 100%;
+  position: inline;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: -45px;
   font-size: 40px;
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -82,10 +83,11 @@ body {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  position: relative;
+  position: absolute;
   background-color: rgba(255, 211, 45, 1);
-  left: 0%;
-  width: 45%;
+  top: 82px;
+  left: 30px;
+  width: 80%;
   height: 50%;
   z-index: 2;
 }
@@ -94,6 +96,7 @@ body {
   color: black;
   padding: 9px;
   text-decoration: none;
+  background-color: rgba(255, 211, 45, 1);
   display: block;
 }
 /* Change color of dropdown links on hover
