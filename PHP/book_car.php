@@ -105,8 +105,9 @@ Have a safe ride, thank you. Regards,
 Commute Aggregator";
 $from_email="From: co2019.khushboo.rathod@ves.ac.in";
 
-(mail($to_email, $subject, $body, $from_email));
-
-$query = "insert into booking_details(name, email, phone_number, from_location, to_location, vehicle_number) values ('$name', '$to_email', '$user_phone', '$from', '$to', '$carNumber')";
-$run = mysqli_query($conn, $query);
+if((mail($to_email, $subject, $body, $from_email))){
+    $query = "insert into booking_details(name, email, phone_number, from_location, to_location, vehicle_number) values ('$name', '$to_email', '$user_phone', '$from', '$to', '$carNumber')";
+    $run = mysqli_query($conn, $query);
+    header("Location:https://commuteagg.000webhostapp.com/HTML/API_Page.html");
+}
 ?>
