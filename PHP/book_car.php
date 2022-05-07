@@ -107,8 +107,6 @@ $from_email="From: co2019.khushboo.rathod@ves.ac.in";
 
 (mail($to_email, $subject, $body, $from_email));
 
-echo "<script>alert('A confirmation mail is sent to your registered email id, Thank you!')</script>";
-
 $query = "insert into booking_details(name, email, phone_number, from_location, to_location, vehicle_number) values ('$name', '$to_email', '$user_phone', '$from', '$to', '$carNumber')";
 $run = mysqli_query($conn, $query);
 ?>
