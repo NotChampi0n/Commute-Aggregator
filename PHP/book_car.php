@@ -132,23 +132,6 @@ $body = "
     </body>
 </html>";
 
-// $body="Hello $name, thank you for booking your ride with Commute Aggregator.  
-                
-// Please find your ride details below:
-// Pickup Location - $from
-// Drop Location - $to 
-// Vehicle Number - $carNumber
-// Driver Name - $driver
-// Drive Contact - $phone
-// Arrival Time - $time Minutes
-// OTP - $otp
-
-// Incase if you wish to cancel the ride, please reply to this mail with CANCEL. Feel free to reach out in case of any confusion. 
-
-// Have a safe ride, thank you. Regards, 
-// Commute Aggregator";
-// $from_email="From: co2019.khushboo.rathod@ves.ac.in";
-
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= "From: co2019.khushboo.rathod@ves.ac.in" . "\r\n";

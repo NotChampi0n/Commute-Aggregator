@@ -37,16 +37,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p>Thanks and Regards, <br>Commute Aggregator</p>
         </body>
     </html>";
-
-    // $body="Hello $name, thank you for reaching out to us. Our executive will look into it closely and get back to you as soon as possible. 
-
-    
-    // Keep commuting safely :) 
-    
-
-    // Thanks and Regards, 
-    // Commute Aggregator";
-    // $from_email="From: co2019.khushboo.rathod@ves.ac.in";
     
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
