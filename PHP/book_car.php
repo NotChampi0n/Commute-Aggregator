@@ -128,7 +128,9 @@ $body = "
             </tr>
         </table>
         <br><br>
-        <p>Keep commuting safely :)</p>
+        <p>Incase if you wish to cancel the ride, please reply to this mail with 'CANCEL'. Feel free to reach out in case of any confusion.</p>
+        <br>
+        <p>Have a safe ride, thank you. Regards,<br>Commute Aggregator</p>
     </body>
 </html>";
 
