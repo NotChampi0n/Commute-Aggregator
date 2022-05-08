@@ -12,10 +12,14 @@ function checkField() {
   to = document.getElementById('to').value;
   if (from == "" || to == "") {
     alert('Please enter locations')
+    return true;
   } else {
-    setTimeout(function(){
+
+    setTimeout(function () {
+      
       location.href = '/HTML/API_Page.html'
-    }, 7000);
+    }, 2000);
+
     var img;
     img = document.getElementById('cargif');
     img.style.width = '100%'
