@@ -72,7 +72,7 @@
         </div>
       </div>
 
-      <div class="searchParent" onclick="location.href='/HTML/API_Page.html';getUberCars();getOlaCars()">
+      <div class="searchParent" onclick="location.href='/HTML/API_Page.html';getUberCars();getOlaCars();set()">
         <div class="searchContainer">
           <span class="searchLabel">Search</span>
         </div>
@@ -349,6 +349,12 @@
 </body>
 
 <script>
+  function set() {
+    var from = document.getElementById("from").value;
+    localStorage.setItem('fromLoc', from);
+    var to = document.getElementById("to").value;
+    localStorage.setItem('toLoc', to);
+  }
   function get() {
     var from = localStorage.getItem('fromLoc');
     document.getElementById("from").value = from
