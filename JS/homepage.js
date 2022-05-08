@@ -13,8 +13,14 @@ function checkField() {
   if (from == "" || to == "") {
     alert('Please enter locations')
   } else {
-
-    location.href = '/HTML/API_Page.html'
+    setTimeout(function(){
+      location.href = '/HTML/API_Page.html'
+    }, 7000);
+    var img;
+    img = document.getElementById('cargif');
+    img.style.width = '100%'
+    img.style.height = '100%'
+    img.src = '/Media/CarLoadingGif.gif';
   }
 }
 
