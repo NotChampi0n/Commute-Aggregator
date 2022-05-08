@@ -13,7 +13,6 @@
   <script src="/JS/homepage.js"></script>
   <script src="/JS/api_helper.js"></script>
   <script src="/JS/api_responsive.js"></script>
-  <link rel="stylesheet" href="/CSS/Home_Page.css" />
 
 </head>
 
@@ -73,10 +72,10 @@
         </div>
       </div>
 
-      <div class="searchParent">
-        <button type="button" class="button"
-          onclick="getUberCars();getOlaCars(); location.href='/HTML/API_Page.html' ;this.classList.toggle('button--loading')">
-          <span class="button__text">Search</span>
+      <div class="searchParent" onclick="location.href='/HTML/API_Page.html';getUberCars();getOlaCars()">
+        <div class="searchContainer">
+          <span class="searchLabel">Search</span>
+        </div>
         </button>
 
 

@@ -18,7 +18,7 @@ function checkField() {
     setTimeout(function () {
       
       location.href = '/HTML/API_Page.html'
-    }, 2000);
+    }, 3000);
 
     var img;
     img = document.getElementById('cargif');

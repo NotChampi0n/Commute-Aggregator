@@ -13,7 +13,7 @@ body {
   width: 90%;
   height: 5%;
   position: relative;
-  top: 5%;
+  top: -5%;
   margin-left: 5%;
 }
 .nameContainer {
@@ -24,7 +24,7 @@ body {
   overflow: hidden;
 }
 .nameLabel {
-  font-size: 40px;
+  font-size: 250%;
   width: 35px;
   position: absolute;
   top: 25%;
@@ -34,7 +34,7 @@ body {
   text-align: center;
 }
 .nameInput {
-  font-size: 40px;
+  font-size: 250%;
   width: 80%;
   height: 60%;
   margin: 2%;
@@ -47,7 +47,7 @@ body {
   width: 90%;
   height: 5%;
   position: relative;
-  top: 10%;
+  top: 0%;
   margin-left: 5%;
   overflow: hidden;
 }
@@ -59,7 +59,7 @@ body {
   overflow: hidden;
 }
 .emailLabel {
-  font-size: 40px;
+  font-size: 250%;
   width: 35px;
   position: absolute;
   top: 25%;
@@ -69,7 +69,7 @@ body {
   text-align: center;
 }
 .emailInput {
-  font-size: 40px;
+  font-size: 250%;
   width: 80%;
   height: 60%;
   margin: 2%;
@@ -82,7 +82,7 @@ body {
   width: 90%;
   height: 5%;
   position: relative;
-  top: 15%;
+  top: 5%;
   margin-left: 5%;
 }
 .categoryContainer {
@@ -93,7 +93,7 @@ body {
   overflow: hidden;
 }
 .categoryLabel {
-  font-size: 40px;
+  font-size: 250%;
   width: 35px;
   position: absolute;
   top: 20%;
@@ -123,19 +123,20 @@ select{
   height: 100%;
   outline: none;
   border: none;
-  font-size: 40px;
+  font-size: 100%;
   font-weight: lighter;
   background-color: white;
 } 
 option{
   background-color: rgba(255, 211, 45, 1);
   color: black;
+  font-size: 20px;
 }
 .textareaParent {
   height: 25%;
   width: 90%;
   position: relative;
-  top: 20%;
+  top: 10%;
   margin-left: 5%;
 }
 .textareaContainer {
@@ -147,7 +148,7 @@ option{
   overflow: hidden;
 }
 .textareaInput {
-  font-size: 40px;
+  font-size: 250%;
   width: 95%;
   height: 91%;
   margin: 2%;
@@ -164,7 +165,7 @@ option{
   width: 50%;
   height: 8%;
   position: relative;
-  top: 25%;
+  top: 15%;
   margin-left: 25%;
 }
 .attachssParent:hover{
@@ -192,12 +193,12 @@ option{
   overflow: hidden;
 } */
 .attachssLabel {
-  font-size: 40px;
+  font-size: 250%;
   width: 100%;
   height: 100%;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  margin-top: 9%;
+  margin-top: 10%;
   margin-left: 5%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: Left;
@@ -233,7 +234,7 @@ option{
   width: 25%;
   height: 7%;
   position: relative;
-  top: 30%;
+  top: 20%;
   margin-left: 37%;
 }
 .submitcContainer {
@@ -246,7 +247,7 @@ option{
   overflow: hidden;
 }
 .submitcLabel {
-  font-size: 40px;
+  font-size: 250%;
   width: 100%;
   height: 100%;
   color: rgba(0, 0, 0, 1);

@@ -29,7 +29,7 @@ body {
   padding-left: 0px;
 }
 .comAgg {
-  font-size: 40px;
+  font-size: 250%;
   width: 45%;
   height: 36%;
   padding-top: 1%;
@@ -39,12 +39,13 @@ body {
   background: rgb(255, 209, 45);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: left;
+  color: rgba(0, 0, 0, 1);
 }
 .comAgg:hover {
   cursor: pointer;
 }
 .platforms {
-  font-size: 40px;
+  font-size: 250%;
   width: 30%;
   height: 36%;
   background: rgb(255, 209, 45);
@@ -114,7 +115,7 @@ body {
   display: block;
 }
 .contactUs {
-  font-size: 40px;
+  font-size: 250%;
   width: 20%;
   height: 36%;
   padding-top: 1%;
@@ -125,9 +126,10 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: rgba(255, 211, 45, 1);
   text-align: center;
+  color: rgba(0, 0, 0, 1);
 }
 .login {
-  font-size: 40px;
+  font-size: 250%;
   width: 18%;
   height: 36%;
   position: absolute;
@@ -138,6 +140,7 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background: rgb(255, 209, 45);
   text-align: left;
+  color: rgba(0, 0, 0, 1);
 }
 .login:hover {
   cursor: pointer;
