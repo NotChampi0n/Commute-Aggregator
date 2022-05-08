@@ -183,7 +183,7 @@ input {
   font-weight: bolder;
 }
 textarea {
-  width: 271px;
+  width: 100%;
   height: 298px;
   border: none;
   outline: none;
