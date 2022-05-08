@@ -5,13 +5,16 @@
   <link rel="shortcut icon" href="/Media/olac1.png">
   <title>Commute Aggregator</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="/CSS/API_Page.css" />
   <link rel="stylesheet" href="/CSS/Common_CSS.css" />
   <script src="/JS/book_car.js"></script>
   <script src="/JS/homepage.js"></script>
   <script src="/JS/api_helper.js"></script>
   <script src="/JS/api_responsive.js"></script>
+  <link rel="stylesheet" href="/CSS/Home_Page.css" />
+
 </head>
 
 <body onload="get();getUberCars();getOlaCars()">
@@ -27,18 +30,18 @@
             <div class="dropdown">
               <button onclick="myFunction()" class="dropbtn" ondblclick="location.href='/HTML/API_Page.html'">
                 Platforms
-              
-              <div id="myDropdown" class="dropdown-content">
-                <a href="https://m.uber.com/looking" target="_blank">Uber</a>
-                <a class="roundedCorners" href="https://www.ola.cars/looking" target="_blank">Ola</a>
-              </div>
+
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="https://m.uber.com/looking" target="_blank">Uber</a>
+                  <a class="roundedCorners" href="https://www.ola.cars/looking" target="_blank">Ola</a>
+                </div>
             </div>
-          </button>
-        </div>
-          
+            </button>
+          </div>
+
           <div class="contactUs black_left_border" onclick="location.href='/HTML/Complaint_Page.html'">Contact Us</div>
           <span class="login black_left_border" onclick="location.href='/index.html'">Login</span>
-      </div>
+        </div>
       </div>
 
       <div class="bgContainer">
@@ -48,10 +51,10 @@
 
       <div class="fromParent">
         <div class="fromContainer">
-        <span class="fromLabel">From</span>
-        <div class="fromInput">
-          <input type="text" name="from" id="from" />
-        </div>
+          <span class="fromLabel">From</span>
+          <div class="fromInput">
+            <input type="text" name="from" id="from" />
+          </div>
         </div>
       </div>
 
@@ -63,17 +66,20 @@
 
       <div class="toParent">
         <div class="toContainer">
-        <div class="toLabel">To</div>
-        <span class="toInput">
-          <input type="text" name="to" id="to" />
-        </span>
-      </div>
+          <div class="toLabel">To</div>
+          <span class="toInput">
+            <input type="text" name="to" id="to" />
+          </span>
+        </div>
       </div>
 
-      <div class="searchParent" onclick="getUberCars();getOlaCars(); location.href='/HTML/API_Page.html'">
-        <div class="searchContainer">
-        <span class="searchLabel">Search</span>
-      </div>
+      <div class="searchParent">
+        <button type="button" class="button"
+          onclick="getUberCars();getOlaCars(); location.href='/HTML/API_Page.html' ;this.classList.toggle('button--loading')">
+          <span class="button__text">Search</span>
+        </button>
+
+
       </div>
 
       <div class="apiBox">
@@ -82,16 +88,16 @@
             <div id="uberLogo" class="carLogo">
               <div class="logoUber"></div>
             </div>
-  
+
             <div class="uberItem carItem">
               <div class="car1">
                 <p class="uberCarInfo" id="uberPrice1"></p>
                 <p class="rideSmallText" id="uberModel1"></p>
-  
+
                 <div class="box">
                   <a class="button" onclick="submitForm()" href="#popup1">Book Now</a>
                 </div>
-                
+
                 <div id="popup1" class="overlay">
                   <div class="popup">
                     <h1>Your Car Has been Booked</h1>
@@ -101,21 +107,21 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <p class="seatingText" id="uberSeat1"></p>
                 <div class="uberSeatingLogo"></div>
               </div>
             </div>
-  
+
             <div class="uberItem carItem">
               <div class="car1">
                 <p class="uberCarInfo" id="uberPrice2"></p>
                 <p class="rideSmallText" id="uberModel2"></p>
-  
+
                 <div class="box">
                   <a class="button" onclick="submitForm()" href="#popup1">Book Now</a>
                 </div>
-                
+
                 <div id="popup1" class="overlay">
                   <div class="popup">
                     <h1>Your Car Has been Booked</h1>
@@ -125,21 +131,21 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <p class="seatingText" id="uberSeat2"></p>
                 <div class="uberSeatingLogo"></div>
               </div>
             </div>
-  
+
             <div class="uberItem carItem">
               <div class="car2">
                 <p class="uberCarInfo" id="uberPrice3"></p>
                 <p class="rideSmallText" id="uberModel3"></p>
-  
+
                 <div class="box">
                   <a class="button" onclick="submitForm()" href="#popup1">Book Now</a>
                 </div>
-                
+
                 <div id="popup1" class="overlay">
                   <div class="popup">
                     <h1>Your Car Has been Booked</h1>
@@ -149,21 +155,21 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <p class="seatingText" id="uberSeat3"></p>
                 <div class="uberSeatingLogo"></div>
               </div>
             </div>
-  
+
             <div class="uberItem carItem">
               <div class="car2">
                 <p class="uberCarInfo" id="uberPrice4"></p>
                 <p class="rideSmallText" id="uberModel4"></p>
-  
+
                 <div class="box">
                   <a class="button" onclick="submitForm()" href="#popup1">Book Now</a>
                 </div>
-                
+
                 <div id="popup1" class="overlay">
                   <div class="popup">
                     <h1>Your Car Has been Booked</h1>
@@ -173,21 +179,21 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <p class="seatingText" id="uberSeat4"></p>
                 <div class="uberSeatingLogo"></div>
               </div>
             </div>
-  
+
             <div class="uberItem carItem">
               <div class="suv">
                 <p class="uberCarInfo" id="uberPrice5"></p>
                 <p class="rideSmallText" id="uberModel5"></p>
-  
+
                 <div class="box">
                   <a class="button" onclick="submitForm()" href="#popup1">Book Now</a>
                 </div>
-                
+
                 <div id="popup1" class="overlay">
                   <div class="popup">
                     <h1>Your Car Has been Booked</h1>
@@ -197,31 +203,31 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <p class="seatingText" id="uberSeat5"></p>
                 <div class="uberSeatingLogo"></div>
               </div>
             </div>
           </div>
-  
+
           <div id="uberApiBtn" class="apiBtn" onclick="stretchUberApi()"></div>
         </div>
-  
+
         <div id="olaApiParent" class="apiParent">
           <div id="olaApiContainer" class="apiContainer">
             <div id="olaLogo" class="carLogo">
               <div class="logoOla"></div>
             </div>
-  
+
             <div class="olaItem carItem">
               <div class="car1">
                 <p class="uberCarInfo" id="olaPrice1"></p>
                 <p class="rideSmallText" id="olaModel1"></p>
-  
+
                 <div class="box">
                   <a class="button" onclick="submitForm()" href="#popup1">Book Now</a>
                 </div>
-                
+
                 <div id="popup1" class="overlay">
                   <div class="popup">
                     <h1>Your Car Has been Booked</h1>
@@ -231,21 +237,21 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <p class="seatingText" id="olaSeat1"></p>
                 <div class="olaSeatingLogo"></div>
               </div>
             </div>
-  
+
             <div class="olaItem carItem">
               <div class="car1">
                 <p class="uberCarInfo" id="olaPrice2"></p>
                 <p class="rideSmallText" id="olaModel2"></p>
-  
+
                 <div class="box">
                   <a class="button" onclick="submitForm()" href="#popup1">Book Now</a>
                 </div>
-                
+
                 <div id="popup1" class="overlay">
                   <div class="popup">
                     <h1>Your Car Has been Booked</h1>
@@ -255,21 +261,21 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <p class="seatingText" id="olaSeat2"></p>
                 <div class="olaSeatingLogo"></div>
               </div>
             </div>
-  
+
             <div class="olaItem carItem">
               <div class="car2">
                 <p class="uberCarInfo" id="olaPrice3"></p>
                 <p class="rideSmallText" id="olaModel3"></p>
-  
+
                 <div class="box">
                   <a class="button" onclick="submitForm()" href="#popup1">Book Now</a>
                 </div>
-                
+
                 <div id="popup1" class="overlay">
                   <div class="popup">
                     <h1>Your Car Has been Booked</h1>
@@ -279,21 +285,21 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <p class="seatingText" id="olaSeat3"></p>
                 <div class="olaSeatingLogo"></div>
               </div>
             </div>
-  
+
             <div class="olaItem carItem">
               <div class="sedan">
                 <p class="uberCarInfo" id="olaPrice4"></p>
                 <p class="rideSmallText" id="olaModel4"></p>
-  
+
                 <div class="box">
                   <a class="button" onclick="submitForm()" href="#popup1">Book Now</a>
                 </div>
-                
+
                 <div id="popup1" class="overlay">
                   <div class="popup">
                     <h1>Your Car Has been Booked</h1>
@@ -303,21 +309,21 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <p class="seatingText" id="olaSeat4"></p>
                 <div class="olaSeatingLogo"></div>
               </div>
             </div>
-  
+
             <div class="olaItem carItem">
               <div class="suv">
                 <p class="uberCarInfo" id="olaPrice5"></p>
                 <p class="rideSmallText" id="olaModel5"></p>
-  
+
                 <div class="box">
                   <a class="button" onclick="submitForm()" href="#popup1">Book Now</a>
                 </div>
-                
+
                 <div id="popup1" class="overlay">
                   <div class="popup">
                     <h1>Your Car Has been Booked</h1>
@@ -327,12 +333,12 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <p class="seatingText" id="olaSeat5"></p>
                 <div class="olaSeatingLogo"></div>
               </div>
             </div>
-  
+
           </div>
           <div id="olaApiBtn" class="apiBtn" onclick="stretchOlaApi()"></div>
         </div>
