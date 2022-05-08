@@ -88,24 +88,72 @@ $name = $username['name'];
 $user_phone = $mobno['phone_number'];
 
 $subject="Your ride is booked!";
-$body="Hello $name, thank you for booking your ride with Commute Aggregator.  
+
+$body = "
+<HTML>
+    <head>
+        <title>HTML email</title>
+    </head>
+    <body>
+        <p>Hello $name, thank you for booking your ride with Commute Aggregator.</p>
+        <p>Please find your ride details below:</p>
+        <table>
+            <tr>
+                <td>Pickup Location: </td>
+                <td>$from</td>
+            </tr>
+            <tr>
+                <td>Drop Location: </td>
+                <td>$to</td>
+            </tr>
+            <tr>
+                <td>Vehicle Number: </td>
+                <td>$carNumber</td>
+            </tr>
+            <tr>
+                <td>Driver Name: </td>
+                <td>$driver</td>
+            </tr>
+            <tr>
+                <td>Driver Contact: </td>
+                <td>$phone</td>
+            </tr>
+            <tr>
+                <td>Arrival Time: </td>
+                <td>$time Minutes</td>
+            </tr>
+            <tr>
+                <td>OTP: </td>
+                <td>$otp</td>
+            </tr>
+        </table>
+        <br><br>
+        <p>Keep commuting safely :)</p>
+    </body>
+</html>";
+
+// $body="Hello $name, thank you for booking your ride with Commute Aggregator.  
                 
-Please find your ride details below:
-Pickup Location - $from
-Drop Location - $to 
-Vehicle Number - $carNumber
-Driver Name - $driver
-Drive Contact - $phone
-Arrival Time - $time Minutes
-OTP - $otp
+// Please find your ride details below:
+// Pickup Location - $from
+// Drop Location - $to 
+// Vehicle Number - $carNumber
+// Driver Name - $driver
+// Drive Contact - $phone
+// Arrival Time - $time Minutes
+// OTP - $otp
 
-Incase if you wish to cancel the ride, please reply to this mail with CANCEL. Feel free to reach out in case of any confusion. 
+// Incase if you wish to cancel the ride, please reply to this mail with CANCEL. Feel free to reach out in case of any confusion. 
 
-Have a safe ride, thank you. Regards, 
-Commute Aggregator";
-$from_email="From: co2019.khushboo.rathod@ves.ac.in";
+// Have a safe ride, thank you. Regards, 
+// Commute Aggregator";
+// $from_email="From: co2019.khushboo.rathod@ves.ac.in";
 
-mail($to_email, $subject, $body, $from_email);
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+$headers .= "From: co2019.khushboo.rathod@ves.ac.in" . "\r\n";
+
+mail($to_email, $subject, $body, $headers);
 
 $query = "insert into booking_details(name, email, phone_number, from_location, to_location, vehicle_number) values ('$name', '$to_email', '$user_phone', '$from', '$to', '$carNumber')";
 $run = mysqli_query($conn, $query);
